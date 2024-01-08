@@ -1,3 +1,11 @@
+<!-- /**
+ * Copyright (c) 2023 重庆隆志科技有限公司. All rights reserved.
+ * author: yangfeng
+ * blog: https://www.jianshu.com/u/71a7345bdabf
+ * date: 2024/01/08
+ * remark: 如果要分发gantt-chart-vue源码，需在本文件顶部保留此文件头信息！！
+ */ -->
+
 <!-- 甘特图vue2
 
   author：yangfeng

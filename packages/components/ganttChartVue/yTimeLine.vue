@@ -1,4 +1,3 @@
-
 <!-- 纵向时间线 -->
 <template>
   <div class="timeLine" v-show="visible" :style="{ left: left }">
