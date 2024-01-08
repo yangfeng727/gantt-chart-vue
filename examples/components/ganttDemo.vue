@@ -129,7 +129,7 @@ export default {
                             },
                             {
                                 label: 'tag前添加图标',
-                                disabled: false
+                                disabled: true
                             }
                         ]
                     },
