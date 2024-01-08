@@ -1,5 +1,6 @@
 # gantt-chart-vue 一个使用vue2.x开发的甘特图组件
-这个组件是我“被裁员期间”抽空给之前呆过的公司【重庆隆志科技有限公司】写的，大家**在二次开发的时候记得保留代码顶部的版权声明文件哦。通过npm 安装原始版本不用管，复制源码然后二次修改才需要这样。**
+[npm 地址](https://www.npmjs.com/package/gantt-chart-vue?activeTab=readme)
+这个组件是我“被裁员期间”抽空给之前呆过的公司 **【重庆隆志科技有限公司】** 写的，大家**在二次开发的时候记得保留代码顶部的版权声明文件哦。通过npm 安装原始版本不用管，复制源码然后二次修改才需要这样。**
 ```
 <!-- /**
  * Copyright (c) 2023 重庆隆志科技有限公司. All rights reserved.
@@ -14,7 +15,7 @@
 packages下是gantt-chart-vue 组件源码  
 examples下是demo代码，根目录下执行 `npm run serve`启动项目  
 
-## 支持vue2.x
+## 支持vue2.x项目
 ## 功能
 * 1.甘特图精度显示到“分钟”。
 * 2.甘特图支持只读模式。
@@ -224,7 +225,7 @@ export default {
 
 ```
 
-# 组件 props 属性值介绍，可查看源码 `packages/components/index.vue` 查看所有props
+# 一、组件 props 属性值介绍，可查看源码 `packages/components/index.vue` 查看所有props
 ## readOnly
 `boolean`，是否只读，最高优先级，为true会禁用所有编辑功能，如拖拽，右键菜单等
 ## disabledRowSilent
@@ -435,3 +436,6 @@ type ItaskMenuList = Ibtn[]
 `string`，画布顶部 “时间列” 高，默认：'40px'。
 ## gridLineColor
 `string`，网格线的颜色，默认：'#dddddd'。
+
+# 二、组件重要方法介绍
+晚点更新。。。
