@@ -1,0 +1,44 @@
+{
+  "name": "gantt-vue2",
+  "version": "1.0.0",
+  "private": false,
+  "main":"packages/index.js",
+  "author":"feng yang",
+  "description": "vue2写的甘特图，支持高度自适应、tag拖拽、显示标记线、tag支持右键菜单、任务列支持显示右键菜单、支持只读模式、支持加减n天任务持续时间效果、支持tag避让效果【需结合后端数据刷新整个甘特图】",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "vue",
+    "vue2.x",
+    "element-ui",
+    "Gantt chart",
+    "甘特图"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib packages/index.js --name index --dest lib",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "dayjs": "^1.11.10",
+    "element-ui": "^2.15.14",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
