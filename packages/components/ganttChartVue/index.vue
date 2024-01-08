@@ -1,7 +1,7 @@
 <!-- 甘特图vue2
 
   author：yangfeng
-  date：2023/11/xx
+  start date：2023/11/xx
 
   主要是将甘特图每行渲染出来，将每个tag的起止时间放到正确位置
 

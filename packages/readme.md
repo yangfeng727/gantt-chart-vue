@@ -1,8 +1,4 @@
-# gantt-chart-vue
-
-# 目录说明
-packages下是gantt-chart-vue 组件源码  
-examples下是demo代码，根目录下执行 `npm run serve`启动项目  
+## 使用vue2.x开发的一款甘特图-[详细文档地址](https://github.com/yangfeng727/gantt-chart-vue)
 
 ## 支持vue2.x
 ## 功能
@@ -31,7 +27,6 @@ examples下是demo代码，根目录下执行 `npm run serve`启动项目
     特别注意：拖动结束后需要重新触发甘特图init方法才会清除避让信息！这部分是垃圾数据，只是为了有个避让效果，和甘特图本身数据无关
 
 ## 效果图
-![图1](./packages/imgs/img1.png)
-![图2](./packages/imgs/img2.png)
-![动态图](./packages/imgs/gif.gif)
-
+![图1](./imgs/img1.png)
+![图2](./imgs/img2.png)
+![动态图](./imgs/gif.gif)
