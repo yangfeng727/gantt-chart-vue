@@ -209,7 +209,7 @@ let hasTagsDataMinRowHeight = 2 * rowPaddingTop + minSowTagRow * tagHeight + (mi
 hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight])
 
 export default {
-  name: 'ganttVue2',
+  name: 'gantt-chart-vue',
   // model: {
   //   prop: 'markLineTime',
   //   event: 'changeMarkLineTime'

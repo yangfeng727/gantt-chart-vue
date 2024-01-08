@@ -31,16 +31,16 @@ module.exports = defineConfig({
   },
   // 扩展webpack配置，使packages加入编译
   // 通过chainWebpack对于项目进行配置，使用babel处理：将高版本语法转成低版本语法
-  chainWebpack: (config) => {
-    config.module
-      .rule('js')
-      .include.add(path.resolve(__dirname, 'packages'))
-      .end()
-      .use('babel')
-      .loader('babel-loader')
-      .tap((option) => {
-        // 修改选项
-        return option
-      })
-  }
+  // chainWebpack: (config) => {
+  //   config.module
+  //     .rule('js')
+  //     .include.add(path.resolve(__dirname, 'packages'))
+  //     .end()
+  //     .use('babel')
+  //     .loader('babel-loader')
+  //     .tap((option) => {
+  //       // 修改选项
+  //       return option
+  //     })
+  // }
 })

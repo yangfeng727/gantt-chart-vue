@@ -23,7 +23,7 @@
             <div :class="{ 'left-box': true, 'showDetail': showDetail }">
                 <div class="gt1" style="height: 400px;">
                     <!-- 默认值测试 -->
-                    <ganttVue2 ref="ganTT1" v-bind="ganTT1Option" :showMarkLine="showOther ? showMarkLine : false"
+                    <ganttChartVue ref="ganTT1" v-bind="ganTT1Option" :showMarkLine="showOther ? showMarkLine : false"
                         :markLineTime.sync="markLineTime" @changeMarkLineClick="changeMarkLineClick1"
                         @rightClickMenuClick="rightClickMenuClick1" @taskMenuBtnClick="taskMenuBtnClick" />
                 </div>
@@ -33,7 +33,7 @@
                 </div>
                 <div v-if="showOther" class="gt1">
                     <!-- 调用demo -->
-                    <ganttVue2 ref="ganTT2" v-bind="ganTT2Option" :showMarkLine="showMarkLine"
+                    <ganttChartVue ref="ganTT2" v-bind="ganTT2Option" :showMarkLine="showMarkLine"
                         :markLineTime.sync="markLineTime" @changeMarkLineClick="changeMarkLineClick2"
                         @rightClickMenuClick="rightClickMenuClick2" @taskMenuBtnClick="taskMenuBtnClick"
                         @tagDragStart="tagDragStart" @tagDragEnd="tagDragEnd2" @tagContextmenu="tagContextmenuHandle2"
@@ -48,7 +48,7 @@
                             </div>
                         </template>
 
-                    </ganttVue2>
+                    </ganttChartVue>
                 </div>
             </div>
             <div v-if="showOther" :class="{ 'right-box': true, 'showDetail': showDetail }">
@@ -64,11 +64,11 @@
 </template>
 <script>
 import { cloneObj } from './index'
-import ganttVue2 from '~/components/ganttVue2/index.vue'
+import ganttChartVue from '~/components/ganttChartVue/index.vue'
 
 export default {
     components: {
-        ganttVue2
+        ganttChartVue
     },
     data() {
         return {

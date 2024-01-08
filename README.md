@@ -1,4 +1,4 @@
-# gantt-vue2
+# gantt-chart-vue
 
 ## Project setup
 ```

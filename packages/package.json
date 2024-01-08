@@ -1,0 +1,30 @@
+{
+  "name": "gantt-chart-vue",
+  "version": "1.0.0",
+  "private": false,
+  "main":"index.js",
+  "author":"feng yang",
+  "license": "ISC",
+  "description": "vue2写的甘特图，支持高度自适应、tag拖拽、显示标记线、tag支持右键菜单、任务列支持显示右键菜单、支持只读模式、支持加减n天任务持续时间效果、支持tag避让效果【需结合后端数据刷新整个甘特图】",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "vue",
+    "vue2.x",
+    "element-ui",
+    "Gantt chart",
+    "甘特图"
+  ],
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1"
+  },
+  "peerDependencies":{
+    "vue": "^2.5.2",
+    "element-ui": "^2.3.9"
+  },
+  "devDependencies": {}
+}
