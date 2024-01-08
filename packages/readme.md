@@ -27,6 +27,6 @@
     特别注意：拖动结束后需要重新触发甘特图init方法才会清除避让信息！这部分是垃圾数据，只是为了有个避让效果，和甘特图本身数据无关
 
 ## 效果图
-![图1](./imgs/img1.png)
-![图2](./imgs/img2.png)
-![动态图](./imgs/gif.gif)
+![图1](https://github.com/yangfeng727/gantt-chart-vue/raw/main/packages/imgs/img1.png)
+![图2](https://github.com/yangfeng727/gantt-chart-vue/raw/main/packages/imgs/img2.png)
+![动态图](https://github.com/yangfeng727/gantt-chart-vue/raw/main/packages/imgs/gif.gif)
