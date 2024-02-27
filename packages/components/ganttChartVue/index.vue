@@ -18,8 +18,8 @@
  【.】绘制网格线、禁用行色块，记得先清空 -- finished
   这里特别说明下网格：
   网格分三部分：1.css .sLine 画的标题分割线 2.canvasGridRefDom 画的内容区域网格 3.canvasGanttRefDom 补充
-  这么麻烦？因为要考虑到横向滚动，纵向滚动【后续可以扩展的功能】，再加上overflow：hidden让子元素无法显示，、
-  若设置为visible又无法滚动，或者会让内部需要隐藏的元素有显示出来，最终用这三步才实现~~~
+  这么麻烦？因为要考虑到横向滚动，纵向滚动【后续可以扩展的功能】，再加上overflow：hidden让子元素无法显示，
+  若设置为visible又无法滚动，或者会让内部需要隐藏的元素又显示出来，最终用这三步才实现~~~
  【.】整个甘特图支持横向滚动条，宽度足够时横向自适应铺满，不够时显示横向滚动。重要！-- finished
  【.】标题栏颜色--外部自行修改css实现，不提取到props了，减少参数 -- finished
  【.】渲染初始 tag -- finished
@@ -1852,7 +1852,7 @@ export default {
         let points = {
           leftTop: [0, 0],
           rightTop: [_width, 0],
-          rightBottom: [_width, _height], // 最后一个，因为+0.5后会超出。因此-1
+          rightBottom: [_width, _height], // 最后一个，因为+0.5后会超出。因此减去一点
           leftBottom: [0, _height]
         }
         // console.log(points, 111)
@@ -1974,7 +1974,7 @@ export default {
       if (!parentKey || !tagType) return 0
       let rowTop = this.calcRowTopByRowLabel(parentKey)
 
-      // 计算tag 距离所在行顶部距离 - 行内
+      // 计算tag 距离所在行顶部距离 - 注意这里是当前行内
       let rowInTop = this.calcTagInRowTop(parentKey, tagType)
       return rowTop + rowInTop
     },
@@ -2421,6 +2421,7 @@ export default {
     hide_TickTimerLine() {
       this.currentTimeLine.visible = false
     },
+    // 当前时间-标记线
     tickTimeLineHandle() {
       let tRange = this.getGanTTimeRange()
       if (!tRange) return this.hide_TickTimerLine()

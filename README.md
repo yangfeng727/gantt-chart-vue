@@ -1,6 +1,6 @@
 # gantt-chart-vue 一个使用vue2.x开发的甘特图组件
 [npm 地址](https://www.npmjs.com/package/gantt-chart-vue?activeTab=readme)
-这个组件是我“被裁员期间”抽空给之前呆过的公司 **【重庆隆志科技有限公司】** 写的，大家**在二次开发的时候记得保留代码顶部的版权声明文件哦。通过npm 安装原始版本不用管，复制源码然后二次修改才需要这样。**
+这个组件是我“被裁员期间”抽空给之前呆过的公司 **【重庆隆志科技有限公司】** 写的，大家**在二次开发的时候记得保留代码顶部的版权声明文件哦。**
 ```
 <!-- /**
  * Copyright (c) 2023 重庆隆志科技有限公司. All rights reserved.
@@ -37,7 +37,7 @@ examples下是demo代码，根目录下执行 `npm run serve`启动项目
 * 14.想要时间更精确，当tag拖动，结束后可以弹窗选择起止时间，可通过dragTagEndShowTimeDialog控制是否开启此功能。
 * 15.tag 支持点击显示选中效果tag selected为true即可，可以全局关闭，提供获取所有选中项，清空所有选中项api。
 * 16.tag 前可以显示自定义图标，就是个类名放到tag前的 `<i>` 标签里面，推荐使用iconfont。
-* 17.甘特图支持实现任务持续时间加减n天显示，tag拖动到有滚动条边界时时滚动条滚动。
+* 17.甘特图支持实现任务持续时间加减n天显示，tag拖动到有滚动条边界时滚动条滚动。
 * 18.甘特图支持tag拖动时，后面tag的避让效果。  
     特别注意：拖动结束后需要重新触发甘特图init方法才会清除避让信息！这部分是垃圾数据，只是为了有个避让效果，和甘特图本身数据无关
 
@@ -229,9 +229,9 @@ export default {
 ## readOnly
 `boolean`，是否只读，最高优先级，为true会禁用所有编辑功能，如拖拽，右键菜单等
 ## disabledRowSilent
-`boolean`，禁用行是否不触发事件，tag不可拖动到禁用行，不触发右键菜单 true：禁止拖入 false：可以拖入。禁用行是根据rows中每个item的 disabled 属性判断的。
+`boolean`，禁用行是否不触发事件，tag不可拖动到禁用行，不触发右键菜单。 true：禁止拖入， false：可以拖入。【注：“禁用行” 是根据rows中每个item的 disabled 属性判断的，disabled:true 代表此行为禁用行，禁用行背景色为 disabledBgColor 的值】
 ## showSelected
-`boolean`，是否显示tag选中 - false 不会显示选中效果，true 显示选中效果【tag是否选中是通过rows中每个item的selected控制的】
+`boolean`，是否显示tag选中 - false 不会显示选中效果，true 显示选中效果【tag是否选中是通过rows中每个item的 selected 控制的】
 ![tag选中效果.gif](./examples/assets/tag选中效果.gif)
 
 ## selfAdaptionGanTTHeight
@@ -284,7 +284,8 @@ type Ilegend = Ilegendtype[]
 * dragable: 此类型tag是否可以拖动，也可以在rows中配置单个tag是否可以拖动
 * closeTip: 此类型是否显示tag tip，也可以在rows中配置单个tag是否关闭提示，true：不显示tip false：显示tip
 * btnList: tag上的右键菜单按钮列表，也可以设置是否禁用某个按钮，效果为:
-![右键菜单按钮](./examples/assets/右键菜单按钮.png)
+![右键菜单按钮](./examples/assets/右键菜单按钮.png)  
+【注意：tag后面显示三个点，代表有操作菜单】
 
 ## title
 `string`，甘特图标题，默认值：'甘特图'。
@@ -305,15 +306,15 @@ type Ilegend = Ilegendtype[]
 ``` typescript
 interface Itags{
     startTime: string; // 此tag的开始时间，注意是完整时间，如：'2023/12/01 02:10:00'
-    endTime: string; // 此tag的开始时间，注意是完整时间，如：'2023/12/03 06:10:00'
+    endTime: string; // 此tag的结束时间，注意是完整时间，如：'2023/12/03 06:10:00'
     label: string; // tag上显示的文本
     type: number; // 同 legend 中的type类型 Ilegendtype.type，用于判断显示在同一任务行中的哪一行
-    closeTip: boolean; // 不显示此tag的tip，注意：只有true|false才会生效
-    dragable: boolean; // 此类型tag是否可以拖动,优先级最高，不设置将取legend的dragable，都没有则禁止拖动，注意：只有true|false才会生效
-    className: string; // 可单独设置tag样式名，可以同时设置多个，如：'classA classB'，将给此tag加上样式classA和样式classB
-    selected: boolean; // 当前tag是否选中-有选中样式
-    preIcon: string; // tag 前可以显示自定义图标，就是个类名放到tag前的 <i> 标签里面，推荐使用iconfont，如'el-icon-video-camera-solid'
-    hide: boolean; // 是否隐藏此tag
+    closeTip?: boolean; // 不显示此tag的tip，注意：只有true|false才会生效
+    dragable?: boolean; // 此类型tag是否可以拖动,优先级最高，不设置将取legend的dragable，都没有则禁止拖动，注意：只有true|false才会生效
+    className?: string; // 可单独设置tag样式名，可以同时设置多个，如：'classA classB'，将给此tag加上样式classA和样式classB
+    selected?: boolean; // 当前tag是否选中-有选中样式
+    preIcon?: string; // tag 前可以显示自定义图标，就是个类名放到tag前的 <i> 标签里面，推荐使用iconfont，如'el-icon-video-camera-solid'
+    hide?: boolean; // 是否隐藏此tag
 }
 
 interface Ibtn{
@@ -351,7 +352,7 @@ type IRows = IRowsItem[]
 ```
 ![底部合计行](./examples/assets/底部合计行.png)
 ## showMarkLine
-`boolean`，是否显示标线，注意：只读模式下标线功能未禁止，同样可以显示和标记。
+`boolean`，是否显示 markLineTime 对应时间的标记线，注意：只读模式下标线功能未禁止，同样可以显示和标记。
 ## markLineTime
 `string`，标记线对应的时间，注意是完整时间，如：'2023/10/04 06:10:00'。标记线的功能为：点击甘特图内容区域，在点击的时间显示一条纵向线，后续可搭配 getTimePierceTags 方法获取所有被指定时间贯穿的tag。demo中有例子，感兴趣可以运行起来看看。
 如图：
@@ -437,5 +438,129 @@ type ItaskMenuList = Ibtn[]
 ## gridLineColor
 `string`，网格线的颜色，默认：'#dddddd'。
 
-# 二、组件重要方法介绍
+# 二、组件内抛出的事件
+
+## **tagDragStart** tag拖动前，参数为当前tag的数据
+```typescript
+type ITagItem = {
+        data: Itags; // Itags 为之前的 props.rows 中的Itags类型，用于存储原始数据
+        parentKey: string; // 记录所属父节点 - 行
+        tagId: string; // 内部生成的用于区分tag的唯一id
+        timeStampDiffer: number; // 开始时间与结束时间的时间差 - tag 拖动时需要保证时间差不变
+        style: { // 当前tag的样式信息
+            top: number | string;
+            width: number | string;
+            left: number | string;
+            height: number | string; // 高度
+            transform: string; // 用于实现拖拽避让动画
+        }
+    } & Required<Itags>
+interface IParams{
+    tagItem: ITagItem;
+}
+$emit('tagDragStart', params: IParams) // IParams 也就是源码中factoryTag方法的返回值类型
+```
+
+## **tagDragEnd** tag拖动结束
+```typescript
+interface IParams{
+    tagItemOld: ITagItem; // 拖拽前tag Data
+    tagItem: ITagItem; // 拖拽的tag Data
+    tagItemDom: HTMLElement; // 拖拽的tag Dom
+    left: number; // 拖动结束相对于甘特图画布【即不包含横纵滚动的画布】的left
+    top: number; // 拖动结束相对于甘特图画布【即不包含横纵滚动的画布】的top
+}
+$emit('tagDragEnd', params: IParams)
+```
+
+## **closeTagTimeDialog** 当 dragTagEndShowTimeDialog 为true，tag拖动结束后会打开时间选择弹窗用于精确控制tag的起止时间，当弹窗关闭时触发此事件
+```typescript
+$emit('closeTagTimeDialog')
+```
+
+## **tagClick** tag点击事件
+```typescript
+interface IParams{
+    e: MouseEvent; // 鼠标点击事件参数e
+    tag: ITagItem; // 同上
+}
+$emit('tagClick', params: IParams)
+```
+
+## **tagContextmenu** tag上鼠标右键事件
+```typescript
+interface IParams{
+     tag: ITagItem; // 同上
+}
+$emit('tagContextmenu', params: IParams)
+```
+
+## **tagMenuBtnClick** tag上打开的右键菜单点击事件。【注意：前提是 legend 中当前类型的 btnList 有值，不然菜单都没有】
+```typescript
+interface IParams{
+    e: MouseEvent; // 鼠标点击事件参数e
+    target: {
+      label: string; // 按钮名称
+      disabled?: boolean; // 是否禁用
+    }, // 菜单触发项
+    triggerIndex: btnIndex; // 菜单触发索引
+    tag: ITagItem; // 同上
+}
+$emit('tagMenuBtnClick', params: IParams)
+```
+![右键菜单按钮](./examples/assets/右键菜单按钮.png)
+
+## **changeMarkLineClick** showMarkLine 为 true 时，点击甘特图触发该事件。【注意：左侧任务栏不会触发此事件。】
+```typescript
+interface IParams{
+    markLineTime: string, // 当前点击点在甘特图内对应的时间
+    inTags: ITagItem[] // 当前时间贯穿的所有tag
+}
+$emit('changeMarkLineClick', params:IParams)
+```
+
+## **update:markLineTime** showMarkLine 为 true 时，markLineTime的值，vue2 使用 markLineTime.sync，vue3 使用 v-model:markLineTime 可以实现多个图标记线联动效果，见demo。
+```typescript
+$emit('update:markLineTime', params:string)
+```
+
+## **rightClickMenuClick** 甘特图画布区域内右键菜单点击。
+```typescript
+interface IParams{
+    e: MouseEvent; // 鼠标点击事件参数e
+    target: {
+        label: string;
+        disabled?: boolean;
+    }; // 菜单触发项 - 即 rightClickMenuList 的item项
+    triggerIndex: number; // 菜单触发索引 - rightClickMenuList 中的索引
+    coordsInfo: {
+        x: number; // 鼠标右键触发点x坐标像素，注：是相对于甘特图画布【即不包含横纵滚动的画布】的
+        y: number; // 鼠标右键触发点y坐标像素，注：是相对于甘特图画布【即不包含横纵滚动的画布】的
+        coords: [string, string] // x,y像素坐标转成的数据坐标
+    };
+}
+$emit('rightClickMenuClick', params:IParams)
+```
+
+## **taskMenuBtnClick** 左侧任务列操作菜单点击事件。
+```typescript
+interface IBtn{
+    label: string;
+    disabled?: boolean; // 是否禁用
+}
+interface IParams{
+    e: MouseEvent; // 鼠标点击事件参数e
+    target: IBtn, // 菜单触发项
+    triggerIndex: number; // 菜单触发索引
+    rowData: {
+        h: number;
+        label: string;
+        tags: ITagItem[]
+        taskBtnList: IBtn[]
+    }
+}
+$emit('taskMenuBtnClick', params:IParams)
+```
+
+# 三、组件重要方法介绍
 晚点更新。。。
