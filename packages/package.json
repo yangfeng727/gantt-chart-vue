@@ -28,5 +28,8 @@
     "vue": "^2.5.2",
     "element-ui": "^2.3.9"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "engines": {
+    "node": "^14.0.0"
+  }
 }

@@ -15,7 +15,11 @@
 packages下是gantt-chart-vue 组件源码  
 examples下是demo代码，根目录下执行 `npm run serve`启动项目  
 
-## 支持vue2.x项目
+## 支持vue2.x、vue3.x
+**注意：**  
+1.针对markLineTime属性， vue2 使用 markLineTime.sync，vue3 使用 v-model:markLineTime。  
+2.组件内部使用的选项式写法。  
+
 ## 功能
 * 1.甘特图精度显示到“分钟”。
 * 2.甘特图支持只读模式。
@@ -626,6 +630,19 @@ interface IGanttChartVueInstance{
     getTagsByRowLabel(rowLabel: string): ITagItem[];
 }
 ```
+# 四、slots 插槽
 
-# 四、其他说明
+## tagTip 插槽可以自定义 tag 的 tooltip 效果，tag tooltip 是基于 element-ui 的 el-popover 实现的。
+```vue
+    <!-- tag tip内容 -->
+    <template #tagTip="{ tagData }">
+        <div class="myTagTip">
+            <p>标题：</p>
+            <p>自定义tag内容： {{ tagData.label + 'abcdef' }}</p>
+            <p>说明11111</p>
+        </div>
+    </template>
+
+```
+# 五、其他说明
 文档中部分类型相同的没有再列举，全局搜索下就找到了，实例方法只是列举了几个常用的，应该能满足大部分需求了。源码注释很清晰，大家也可以二次开发，不过记得保留版权声明，或者提个issue，我看到了有时间就来改。如果 github 上文档里面的图片显示不出来，可以把项目下载下来在本地查看，引用的图片都在里面。
