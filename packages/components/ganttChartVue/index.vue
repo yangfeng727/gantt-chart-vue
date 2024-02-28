@@ -773,7 +773,7 @@ export default {
       return (((endTime - startTime) / 1000 / 60).toFixed(0) / utils.getDOMWH(paintBoxDom).w)
     },
 
-    // 将时间差 - 毫秒时间戳 转为 在甘特图中的横向距离
+    // 将时间差 - 毫秒时间戳 转为 在甘特图【.box-paint】中的横向距离
     timeStampGapToInfeedDistance(timeMs) {
       let _stime = this.dealTime(timeMs, true)
       return Number(_stime / this.getPxOfTimeParticle()).toFixed(6)
@@ -793,7 +793,7 @@ export default {
     },
 
     /**
-     * 将在画布中的时间转为在画布中的left
+     * 将在画布中的时间转为在 paintBoxRefDom 画布中的left
      * @param {*} time 画布中的时间
      */
     getLeftByStartTime(time = '') {
@@ -1103,7 +1103,7 @@ export default {
     /**
      * 修改tag节点
      * @param {*} tagId 生成的甘特图tag唯一id
-     * @param {*} newTagItem 生成的甘特图tag唯一id
+     * @param {*} newTagItem 修改后的tag
      * @param {*} refreshGTT 修改tag后是否需要刷新甘特图，不涉及宽高计算变化的可以不调用刷新，提高性能
      * @return boolean 操作成功 | 失败
      */
@@ -1150,7 +1150,7 @@ export default {
      * 甘特图的移动结束只是为了确定当前left，top所在行（label），列（开始、结束时间）信息，更新后走渲染逻辑即可
      */
     tagChangeEnd() {
-      let { tagItemOld, tagItem, tagItemDom, left, top } = this.draging
+      let { tagItemOld, tagItem, tagItemDom, left, top } = this.draging // 将 draging 横向信息转成时间信息存入对应时间tag
 
       let finalTop = top
 
@@ -1258,13 +1258,13 @@ export default {
     /**
      * tag避让
      * @param {*} preTagItem 前一个tag
-     * @param {*} nextTags 前一个tag后面的所有tag -- 可能需要加上避让效果的tags
+     * @param {*} nextTags 前一个tag后面的所有tag -- 即可能需要加上避让效果的tags
      */
     dodgeTag(preTagItem = {}, nextTags = []) {
       if (!preTagItem || !Object.keys(preTagItem).length || !nextTags || !nextTags.length) return
       // 前一个tag
       let _dodge = preTagItem._dodge
-      let before_startTime = _dodge ? _dodge.startTime : new Date(preTagItem.startTime).getTime()
+      let before_startTime = _dodge ? _dodge.startTime : new Date(preTagItem.startTime).getTime() // 因为此函数会递归调用，需要判断此tag是否是已经避让过的tag
       let before_endTime = _dodge ? _dodge.endTime : new Date(preTagItem.endTime).getTime()
 
       // 紧跟着的后面一个tag
@@ -1314,7 +1314,7 @@ export default {
       let newRowLabel = this.rowsInfo[currentRowIndex].label
 
       // 过滤tags
-      let filterTypeTags = this.tagList.filter(item => item.tagId !== dragTagItem.tagId && item.type === dragTagItem.type && item.dragable !== false) // 过滤当前tag、前类型的所有tags、禁止拖动tag
+      let filterTypeTags = this.tagList.filter(item => item.tagId !== dragTagItem.tagId && item.type === dragTagItem.type && item.dragable !== false) // 过滤掉当前tag、过滤当前类型的所有tags、且不是禁止拖动的tag
       let thisRowTags = filterTypeTags.filter(item => item.parentKey === newRowLabel) // 当前行所有tag
 
       // 2.当前行中 将tag前的tags还原到正确位置
@@ -1887,7 +1887,11 @@ export default {
 
     //#region 参考线
 
-    // 绘制拖动时的参考线
+    /**
+     * 绘制拖动时的参考线
+     * @param {*} x .box-paint 盒子中的二维坐标
+     * @param {*} y .box-paint 盒子中的二维坐标
+     */
     drawMoveGuideLineY(x, y) {
       let canvas = this.$refs['canvasGuideBoxRefDom']
       if (!canvas) return
@@ -2636,7 +2640,7 @@ export default {
 
     //#region 重要的事件参数构造
 
-    // 获取行下的所有tags
+    // 获取指定label行下的所有tags
     getTagsByRowLabel(rowLabel = '') {
       if (!rowLabel) return []
       return this.tagList.filter(item => item.parentKey === rowLabel).map(item => this.backfillTag(item))

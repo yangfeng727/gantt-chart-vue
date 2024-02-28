@@ -25,7 +25,8 @@
                     <!-- 默认值测试 -->
                     <ganttChartVue ref="ganTT1" v-bind="ganTT1Option" :showMarkLine="showOther ? showMarkLine : false"
                         :markLineTime.sync="markLineTime" @changeMarkLineClick="changeMarkLineClick1"
-                        @rightClickMenuClick="rightClickMenuClick1" @taskMenuBtnClick="taskMenuBtnClick" />
+                        @rightClickMenuClick="rightClickMenuClick1" @taskMenuBtnClick="taskMenuBtnClick"
+                        @tagMenuBtnClick="tagMenuBtnClick1" />
                 </div>
 
                 <div style="margin-top: 50px;" v-if="showOther">
@@ -121,15 +122,15 @@ export default {
                         closeTip: false, // 显示tag tip，也可以在rows中配置单个tag是否关闭提示
                         btnList: [ // 右键菜单按钮列表
                             {
-                                label: '开启tag选中',
+                                label: 'tag menu btn1',
                                 disabled: false
                             },
                             {
-                                label: '关闭tag选中',
+                                label: 'tag menu btn2',
                                 disabled: false
                             },
                             {
-                                label: 'tag前添加图标',
+                                label: 'tag menu btn3禁用',
                                 disabled: true
                             }
                         ]
@@ -461,6 +462,8 @@ export default {
 
             console.log('ganTT1 甘特图数据', ganTT1.getRowsData())
             console.log('ganTT2 甘特图数据', ganTT2.getRowsData())
+
+            console.log('ganTT1 项目B这行下的所有tags', ganTT1.getTagsByRowLabel('项目B'))
         },
         changeShowDetail(bool = false) {
             this.showDetail = !this.showDetail
@@ -519,6 +522,10 @@ export default {
             // 存储数据
             this.ganTT2Option.rows = this.$refs['ganTT2'].getRowsData()
             console.log('注意：rows 改变将触发甘特图init方法，会清除避让信息')
+        },
+        // tag上右键菜单按钮
+        tagMenuBtnClick1(data) {
+            console.log('tag上右键菜单按钮', data)
         },
         // tag上右键菜单按钮
         tagMenuBtnClick2(data) {

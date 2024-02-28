@@ -562,5 +562,70 @@ interface IParams{
 $emit('taskMenuBtnClick', params:IParams)
 ```
 
-# 三、组件重要方法介绍
-晚点更新。。。
+# 三、组件重要实例方法介绍
+## getRowsData() 获取甘特图完整行数据, 格式和props.rows一致
+```typescript
+interface IGanttChartVueInstance{
+   getRowsData(): IRowsItem[];
+}
+```
+
+## getTimePierceTags('2023/10/04 06:10:00') 获取指定时间贯穿的所有tag
+```typescript
+interface IGanttChartVueInstance{
+   getTimePierceTags(time:string): ITagItem[];
+}
+```
+
+## clearAllTagSelected() 清空所有tag的选中状态，将 selected 都设置为 false
+```typescript
+interface IGanttChartVueInstance{
+   clearAllTagSelected(): void;
+}
+```
+
+## getAllSelectedTags() 获取所有被选中的tag，也就是将 selected 为 true 的过滤出来
+```typescript
+interface IGanttChartVueInstance{
+   getAllSelectedTags(): ITagItem[];
+}
+```
+
+## updateTag(tagId, newTagItem, refreshGTT) 修改tag节点，比如修改此节点的selected、className、closeTip等等属性
+```typescript
+interface IGanttChartVueInstance{
+    /**
+     * 修改tag节点
+     * @param {*} tagId 生成的甘特图tag唯一id
+     * @param {*} newTagItem 修改后的tag
+     * @param {*} refreshGTT 修改tag后是否需要刷新甘特图，不涉及宽高计算变化的可以不调用刷新，提高性能
+     * @return boolean 操作成功 | 失败
+     */
+    updateTag(tagId: string,newTagItem: ITagItem, refreshGTT: boolean): boolean; // 操作成功返回 true，失败返回false
+}
+```
+
+## deleteTag(tagId) 删除tag节点
+```typescript
+interface IGanttChartVueInstance{
+    /**
+     * 删除tag节点
+     * @param {*} tagId 生成的甘特图tag唯一id
+     * @return boolean 操作成功 | 失败
+     */
+    deleteTag(tagId: string): boolean; // 操作成功返回 true，失败返回false
+}
+```
+
+## getTagsByRowLabel(label) 获取指定label行下的所有tags
+```typescript
+interface IGanttChartVueInstance{
+    /**
+     * @param {*} rowLabel 左侧任务栏的label
+     */
+    getTagsByRowLabel(rowLabel: string): ITagItem[];
+}
+```
+
+# 四、其他说明
+文档中部分类型相同的没有再列举，全局搜索下就找到了，实例方法只是列举了几个常用的，应该能满足大部分需求了。源码注释很清晰，大家也可以二次开发，不过记得保留版权声明，或者提个issue，我看到了有时间就来改。
