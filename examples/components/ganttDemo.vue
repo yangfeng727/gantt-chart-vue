@@ -65,8 +65,9 @@
 </template>
 <script>
 import { cloneObj } from './index'
-// import ganttChartVue from '~/components/ganttChartVue/index.vue' // 本地调试
-import ganttChartVue from 'gantt-chart-vue' // 测试
+import ganttChartVue from '~/components/ganttChartVue/index.vue' // 本地调试
+// import ganttChartVue from 'gantt-chart-vue' // 测试
+// import ganttChartVue from '../../dist/gantt-chart-vue.umd.min' // 测试
 
 export default {
     components: {

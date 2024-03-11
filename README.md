@@ -17,8 +17,7 @@ examples下是demo代码，根目录下执行 `npm run serve`启动项目
 
 ## 支持vue2.x、vue3.x
 **注意：**  
-1.针对markLineTime属性， vue2 使用 markLineTime.sync，vue3 使用 v-model:markLineTime。  
-2.组件内部使用的选项式写法。  
+针对markLineTime属性， vue2 使用 markLineTime.sync，vue3 使用 v-model:markLineTime。  
 
 ## 功能
 * 1.甘特图精度显示到“分钟”。

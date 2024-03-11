@@ -1,6 +1,9 @@
 ## 使用vue2.x开发的一款甘特图-[详细文档地址](https://github.com/yangfeng727/gantt-chart-vue)
 
-## 支持vue2.x
+## 支持vue2.x、vue3.x
+**注意：**  
+针对markLineTime属性， vue2 使用 markLineTime.sync，vue3 使用 v-model:markLineTime。  
+
 ## 功能
 * 1.甘特图精度显示到“分钟”。
 * 2.甘特图支持只读模式。
@@ -22,7 +25,7 @@
 * 14.想要时间更精确，当tag拖动，结束后可以弹窗选择起止时间，可通过dragTagEndShowTimeDialog控制是否开启此功能。
 * 15.tag 支持点击显示选中效果tag selected为true即可，可以全局关闭，提供获取所有选中项，清空所有选中项api。
 * 16.tag 前可以显示自定义图标，就是个类名放到tag前的 `<i>` 标签里面，推荐使用iconfont。
-* 17.甘特图支持实现任务持续时间加减n天显示，tag拖动到有滚动条边界时时滚动条滚动。
+* 17.甘特图支持实现任务持续时间加减n天显示，tag拖动到有滚动条边界时滚动条滚动。
 * 18.甘特图支持tag拖动时，后面tag的避让效果。  
     特别注意：拖动结束后需要重新触发甘特图init方法才会清除避让信息！这部分是垃圾数据，只是为了有个避让效果，和甘特图本身数据无关
 
