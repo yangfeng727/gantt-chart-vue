@@ -15,9 +15,12 @@
 packages下是gantt-chart-vue 组件源码  
 examples下是demo代码，根目录下执行 `npm run serve`启动项目  
 
-## 支持vue2.x、vue3.x
+## 支持vue2.x
 **注意：**  
-针对markLineTime属性， vue2 使用 markLineTime.sync，vue3 使用 v-model:markLineTime。  
+针对markLineTime属性， vue2 使用 markLineTime.sync。~~vue3 使用 v-model:markLineTime~~。 
+
+## vue3.x 支持
+目前不支持vue3，vue3后续有空了会重新发布个next版本，因为vue3本身是支持选项式写法的，只需要修改一小部分代码即可，element-ui 也需要升级为 element-plus。
 
 ## 功能
 * 1.甘特图精度显示到“分钟”。
