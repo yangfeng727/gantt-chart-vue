@@ -12,15 +12,19 @@
 ```
 
 ## 目录说明
-packages下是gantt-chart-vue 组件源码  
-examples下是demo代码，根目录下执行 `npm run serve`启动项目  
+packages下是 gantt-chart-vue 组件源码  
+examples下是demo代码，进入examples目录下执行 `npm i 和 npm run serve` 启动项目demo  
+
+## 环境支持
+稍微低一点的版本应该也是支持的，不过还是建议 vue 大于等于 2.5.x，node 大于等于 14.18.0。examples demo 考虑到现在低版本node的情况比较少，于是限制的大于 node 16.0.0 版本 + "node-sass": "^9.0.0"。不过因为发布的是编译后的产物，因此对node的要求反而低一些。
 
 ## 支持vue2.x
 **注意：**  
 针对markLineTime属性， vue2 使用 markLineTime.sync。~~vue3 使用 v-model:markLineTime~~。 
 
 ## vue3.x 支持
-目前不支持vue3，vue3后续有空了会重新发布个next版本，因为vue3本身是支持选项式写法的，只需要修改一小部分代码即可，element-ui 也需要升级为 element-plus。
+目前不支持vue3，原因是element ui 不支持vue3需要改为了element-plus。  
+vue3后续有空了会重新发布个next版本，因为vue3本身是支持选项式写法的，改为 element-plus 后只需要修改一小部分代码即可。
 
 ## 功能
 * 1.甘特图精度显示到“分钟”。
@@ -59,7 +63,16 @@ examples下是demo代码，根目录下执行 `npm run serve`启动项目
 npm i gantt-chart-vue -S
 
 ## 引入
-### 方式一，main.js中全局引入
+
+### 方式一：使用 script 标签引入 dist 目录下源码，注意需要先引入 vue
+```html
+<!-- vue改为你自己的 vue2.x 版本 -->
+<script src="https://cdn.staticfile.net/vue/2.6.14/vue.min.js"></script>
+<!-- 需要先引入vue，然后甘特图路径改为你自己的 -->
+<script src="./gantt-chart-vue/gantt-chart-vue.umd.min.js"></script>
+```
+
+### 方式二：main.js中全局引入
 ```js
 import Vue from 'vue'
 import App from './App.vue'
@@ -74,7 +87,7 @@ new Vue({
 }).$mount('#app')
 
 ```
-### 方式二
+### 方式三：组件内单独引入
 ```js
 import ganttChartVue from 'gantt-chart-vue'
 
@@ -86,148 +99,160 @@ export default {
   ...
 }
 ```
-### 基础使用代码
+
+### 基础使用
 ``` vue
 <template>
   <div>
-  <!-- 默认值测试 -->
-  <gantt-chart-vue ref="ganTT1" v-bind="ganTT1Option" />
+    <!-- 默认值测试 -->
+    <gantt-chart-vue
+      ref="ganTT"
+      v-bind="ganTT1Option"
+      @tagDragEnd="tagDragEnd"
+    />
   </div>
 </template>
 
 <script>
-import ganttChartVue from 'gantt-chart-vue'
+import ganttChartVue from "gantt-chart-vue";
 export default {
   components: {
-        ganttChartVue
-    },
-  data(){
+    ganttChartVue,
+  },
+  data() {
     return {
       ganTT1Option: {
-                readOnly: false, // 只读模式
-                title: '甘特图',
-                legend: [
-                    {
-                        label: '模型预排',
-                        color: '#365ce5',
-                        type: 1, // 用于判定同一网格行内具体所属行
-                        dragable: true, // 此类型tag是否可以拖动，也可以在rows中配置单个tag是否可以拖动
-                        closeTip: false, // 显示tag tip，也可以在rows中配置单个tag是否关闭提示
-                        btnList: [ // 右键菜单按钮列表
-                            {
-                                label: '开启tag选中',
-                                disabled: false
-                            },
-                            {
-                                label: '关闭tag选中',
-                                disabled: false
-                            },
-                            {
-                                label: 'tag前添加图标',
-                                disabled: false
-                            }
-                        ]
-                    },
-                    {
-                        label: '生产实绩',
-                        color: '#39c236',
-                        type: 2, // 用于判定同一网格行内具体所属行
-                    },
-                    {
-                        label: '计划停机1',
-                        color: '#f5212d',
-                        type: 3, // 用于判定同一网格行内具体所属行
-                        closeTip: true // 关闭此大类的tag tip，若tag自行设置有closeTip，则以tag 内的为准
-                    },
-                    {
-                        label: '计划停机2',
-                        color: '#ff9c1b',
-                        type: 4 // 用于判定同一网格行内具体所属行
-                    }
-                ],
-                rows: [
-                    {
-                        label: '项目A',
-                        tags: [
-                            {
-                                startTime: '2023/12/01 02:10:00',
-                                endTime: '2023/12/03 06:10:00',
-                                label: '关闭此类型tip-1',
-                                type: 3
-                            },
-                            {
-                                startTime: '2023/12/01 02:10:00',
-                                endTime: '2023/12/03 06:10:00',
-                                label: '计划停机2,完成度90%',
-                                type: 4
-                            },
-                            {
-                                startTime: '2023/12/03 08:00:00',
-                                endTime: '2023/12/05 10:10:00',
-                                label: '关闭此类型tip-2',
-                                type: 3
-                            },
-                            {
-                                startTime: '2023/12/06 02:10:00',
-                                endTime: '2023/12/07 06:00:00',
-                                label: 'tag右键菜单展示demo',
-                                type: 1
-                            },
-                        ]
-                    },
-                    {
-                        label: '项目B',
-                        tags: [
-                            {
-                                startTime: '2023/12/06 02:10:00',
-                                endTime: '2023/12/07 06:10:00',
-                                label: '模型预排1111,xx吨,完成度90%',
-                                type: 1
-                            },
-                        ]
-                    },
-                    {
-                        label: '项目C',
-                        tags: []
-                    },
-                    {
-                        label: '项目D',
-                        tags: [
-                            {
-                                startTime: '2023/12/01 02:10:00',
-                                endTime: '2023/12/03 06:10:00',
-                                label: 'xxxx,xx吨,完成度90%',
-                                type: 1
-                            },
-                        ]
-                    },
-                    {
-                        label: '项目E',
-                        tags: []
-                    },
-                    {
-                        label: '项目F',
-                        tags: []
-                    },
-                    {
-                        label: '项目G',
-                        disabled: true, // 禁止响应事件
-                        tags: []
-                    },
-                    {
-                        label: '项目H',
-                        tags: []
-                    },
-                ],
-                startDate: '2023/12/01',
-                dateDuration: 7
-            },
-    }
-  }
-}
+        readOnly: false, // 只读模式
+        title: "甘特图",
+        legend: [
+          {
+            label: "模型预排",
+            color: "#365ce5",
+            type: 1, // 用于判定同一网格行内具体所属行
+            dragable: true, // 此类型tag是否可以拖动，也可以在rows中配置单个tag是否可以拖动
+            closeTip: false, // 显示tag tip，也可以在rows中配置单个tag是否关闭提示
+            btnList: [
+              // 右键菜单按钮列表
+              {
+                label: "开启tag选中",
+                disabled: false,
+              },
+              {
+                label: "关闭tag选中",
+                disabled: false,
+              },
+              {
+                label: "tag前添加图标",
+                disabled: false,
+              },
+            ],
+          },
+          {
+            label: "生产实绩",
+            color: "#39c236",
+            type: 2, // 用于判定同一网格行内具体所属行
+          },
+          {
+            label: "计划停机1",
+            color: "#f5212d",
+            type: 3, // 用于判定同一网格行内具体所属行
+            closeTip: true, // 关闭此大类的tag tip，若tag自行设置有closeTip，则以tag 内的为准
+          },
+          {
+            label: "计划停机2",
+            color: "#ff9c1b",
+            type: 4, // 用于判定同一网格行内具体所属行
+          },
+        ],
+        rows: [
+          {
+            label: "项目A",
+            tags: [
+              {
+                startTime: "2023/12/01 02:10:00",
+                endTime: "2023/12/03 06:10:00",
+                label: "关闭此类型tip-1",
+                type: 3,
+              },
+              {
+                startTime: "2023/12/01 02:10:00",
+                endTime: "2023/12/03 06:10:00",
+                label: "计划停机2,完成度90%",
+                type: 4,
+              },
+              {
+                startTime: "2023/12/03 08:00:00",
+                endTime: "2023/12/05 10:10:00",
+                label: "关闭此类型tip-2",
+                type: 3,
+              },
+              {
+                startTime: "2023/12/06 02:10:00",
+                endTime: "2023/12/07 06:00:00",
+                label: "tag右键菜单展示demo",
+                type: 1,
+              },
+            ],
+          },
+          {
+            label: "项目B",
+            tags: [
+              {
+                startTime: "2023/12/06 02:10:00",
+                endTime: "2023/12/07 06:10:00",
+                label: "模型预排1111,xx吨,完成度90%",
+                type: 1,
+              },
+            ],
+          },
+          {
+            label: "项目C",
+            tags: [],
+          },
+          {
+            label: "项目D",
+            tags: [
+              {
+                startTime: "2023/12/01 02:10:00",
+                endTime: "2023/12/03 06:10:00",
+                label: "xxxx,xx吨,完成度90%",
+                type: 1,
+              },
+            ],
+          },
+          {
+            label: "项目E",
+            tags: [],
+          },
+          {
+            label: "项目F",
+            tags: [],
+          },
+          {
+            label: "项目G",
+            disabled: true, // 禁止响应事件
+            tags: [],
+          },
+          {
+            label: "项目H",
+            tags: [],
+          },
+        ],
+        startDate: "2023/12/01",
+        dateDuration: 7,
+      },
+    };
+  },
+  methods: {
+    // tag拖拽结束
+    tagDragEnd(data) {
+      console.log("tag拖拽结束", data);
+      let rows = this.$refs["ganTT"].getRowsData();
+      console.log("甘特图数据：", rows);
+    },
+  },
+};
 </script>
-<style scoped>
-</style>
 
 ```
 
@@ -238,7 +263,7 @@ export default {
 `boolean`，禁用行是否不触发事件，tag不可拖动到禁用行，不触发右键菜单。 true：禁止拖入， false：可以拖入。【注：“禁用行” 是根据rows中每个item的 disabled 属性判断的，disabled:true 代表此行为禁用行，禁用行背景色为 disabledBgColor 的值】
 ## showSelected
 `boolean`，是否显示tag选中 - false 不会显示选中效果，true 显示选中效果【tag是否选中是通过rows中每个item的 selected 控制的】
-![tag选中效果.gif](./examples/assets/tag选中效果.gif)
+![tag选中效果.gif](./packages/imgs/tag选中效果.gif)
 
 ## selfAdaptionGanTTHeight
 `boolean`，是否开启甘特图高度自适应：  
@@ -290,7 +315,7 @@ type Ilegend = Ilegendtype[]
 * dragable: 此类型tag是否可以拖动，也可以在rows中配置单个tag是否可以拖动
 * closeTip: 此类型是否显示tag tip，也可以在rows中配置单个tag是否关闭提示，true：不显示tip false：显示tip
 * btnList: tag上的右键菜单按钮列表，也可以设置是否禁用某个按钮，效果为:
-![右键菜单按钮](./examples/assets/右键菜单按钮.png)  
+![右键菜单按钮](./packages/imgs/右键菜单按钮.png)  
 【注意：tag后面显示三个点，代表有操作菜单】
 
 ## title
@@ -299,7 +324,7 @@ type Ilegend = Ilegendtype[]
 `string`，初始显示的甘特图列开始时间，默认值：'2023/12/01'。重要！！！
 ## dateDuration
 `number`，任务持续时间 - 从开始时间计算，默认值：7。重要！！！
-![任务持续时间](./examples/assets/任务持续时间.png)
+![任务持续时间](./packages/imgs/任务持续时间.png)
 ## decreaseDayNum
 `number`，除了dateDuration任务持续时间，当tag横向拖动到左边界时，可以往前几天时间。需求说明：
     如甘特图为7+2天，如果tag往左移出了，甘特图时间轴需要 - 1天；往右移出则 + 1 天，此时甘特图出现横向滚动条。
@@ -356,13 +381,13 @@ type IRows = IRowsItem[]
         }
     },
 ```
-![底部合计行](./examples/assets/底部合计行.png)
+![底部合计行](./packages/imgs/底部合计行.png)
 ## showMarkLine
 `boolean`，是否显示 markLineTime 对应时间的标记线，注意：只读模式下标线功能未禁止，同样可以显示和标记。
 ## markLineTime
 `string`，标记线对应的时间，注意是完整时间，如：'2023/10/04 06:10:00'。标记线的功能为：点击甘特图内容区域，在点击的时间显示一条纵向线，后续可搭配 getTimePierceTags 方法获取所有被指定时间贯穿的tag。demo中有例子，感兴趣可以运行起来看看。
 如图：
-![贯穿tag的标记线.png](./examples/assets/贯穿tag的标记线.png)
+![贯穿tag的标记线.png](./packages/imgs/贯穿tag的标记线.png)
 ## rightClickMenuList
 甘特图右键菜单里面的按钮，类型为：
 ```typescript
@@ -391,7 +416,7 @@ type IrightClickMenuList = Ibtn[]
     },
 ```
 效果图：
-![甘特图右键菜单](./examples/assets/甘特图右键菜单.png)
+![甘特图右键菜单](./packages/imgs/甘特图右键菜单.png)
 
 ## taskMenuList
 任务列菜单 - 每行的菜单都一样，若想给某行单独设置不同的菜单，则给row 对应行赋值 `taskMenuList`，上面props.rows中有讲到过。  
@@ -422,15 +447,15 @@ type ItaskMenuList = Ibtn[]
     },
 ```
 效果图：
-![任务列菜单](./examples/assets/任务列菜单.png)
-![任务列菜单2](./examples/assets/任务列菜单2.png)
+![任务列菜单](./packages/imgs/任务列菜单.png)
+![任务列菜单2](./packages/imgs/任务列菜单2.png)
 ## dragTagEndShowTimeDialog
 `boolean`，tag拖拽结束是否显示时间选择框，默认：false。
-![拖拽结束显示时间框](./examples/assets/拖拽结束显示时间框.gif)
+![拖拽结束显示时间框](./packages/imgs/拖拽结束显示时间框.gif)
 ## openTagMoveDodgeAnimate
 `boolean`，tag拖动的避让效果，只是单纯显示，原理: 修改translateX(x)，这样不会对原始数据造成影响，非必要不用开启此功能。  
 **【注意!!!：开启此功能后，将导致某些tag含有translateX 偏移，从而让甘特图表现异常-正确用法是每次拖动结束【比如调接口计算】，然后重新渲染整个甘特图】**
-![tag避让效果](./examples/assets/tag避让效果.gif)
+![tag避让效果](./packages/imgs/tag避让效果.gif)
 
 ### 下面几个 props 属性是样式属性
 ## ganttBgColor
@@ -514,7 +539,7 @@ interface IParams{
 }
 $emit('tagMenuBtnClick', params: IParams)
 ```
-![右键菜单按钮](./examples/assets/右键菜单按钮.png)
+![右键菜单按钮](./packages/imgs/右键菜单按钮.png)
 
 ## **changeMarkLineClick** showMarkLine 为 true 时，点击甘特图触发该事件。【注意：左侧任务栏不会触发此事件。】
 ```typescript
@@ -648,3 +673,19 @@ interface IGanttChartVueInstance{
 ```
 # 五、其他说明
 文档中部分类型相同的没有再列举，全局搜索下就找到了，实例方法只是列举了几个常用的，应该能满足大部分需求了。源码注释很清晰，大家也可以二次开发，不过记得保留版权声明，或者提个issue，我看到了有时间就来改。如果 github 上文档里面的图片显示不出来，可以把项目下载下来在本地查看，引用的图片都在里面。
+
+# 关于打包发布遇到的问题
+
+### 2024/03/11 修复依赖层级问题
+问题原因是在发布项目的 package.json 中引入了甘特图（一开始是为了测试下发布后是否能正常安装使用），导致发布到 npm（未编译，直接发布的组件源代码）后，每次下载甘特图都会自己依赖自己，属于是死循环安装了。。。导致安装失败。后改成了编译后发布的方式，并删除了 dependencies 下的 gantt-chart-vue 依赖，nodesass 改为了 9.0.0，node升级为 16.0.0+。
+
+### vue-demi 是否引入从而达到同时管理一个库来支持vue2和vue3。
+答：不使用，element-ui 怎么搞呢？所以还是得新建vue3项目支持。
+
+### 2024/08/14 是否将package.json 分离？
+之前的做法是发布到 npm 和 github 上使用的同一个 package.json 和 README.md 文件。  
+首先需要明确 README.md 文件是肯定需要公用的，不然 npm 和 github 上的文档是完全一致的，每次都要改两份。  
+其次是 package.json，因为和项目依赖挂钩，拆开需要调整下目录结构，考虑到发布的是编译后产物，那和 sass 就没什么关系了，因而 node-sass 导致的 node 限制也不需要了，而且很多 devDependencies 在发布后其实是没啥用的，后续用户安装的时候其实没必要再安装，最终决定拆开！
+
+### element-ui 和 dayjs 可以去掉吗？导致打包体积变大
+其实是可以的，但是懒得改，其实 element-ui 和 dayjs 没有用到太多，可以用原生方法替代，但是写起来很浪费时间，算了，不搞，用现成的简单些。

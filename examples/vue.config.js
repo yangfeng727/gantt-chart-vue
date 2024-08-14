@@ -9,13 +9,13 @@ function resolve(dir) {
 }
 
 module.exports = defineConfig({
+  lintOnSave: false, // 关闭eslint
   productionSourceMap: false,
   transpileDependencies: true,
   configureWebpack: { 
     resolve: {
       alias: { // 别名配置
-        '@': resolve('examples'), // src改为了examples
-        '~': resolve('packages')
+        '@': resolve('src')
       }
     }
   },
@@ -25,7 +25,7 @@ module.exports = defineConfig({
   },
   pages: {
     index: {
-      entry: 'examples/main.js',// 因为我们改了src目录，所以对应的入口文件配置也要做修改
+      entry: 'src/main.js',// 因为我们改了src目录，所以对应的入口文件配置也要做修改
       template: 'public/index.html',
       filename: 'index.html',
     },
@@ -35,7 +35,7 @@ module.exports = defineConfig({
   chainWebpack: (config) => {
     config.module
       .rule('js')
-      .include.add(path.resolve(__dirname, 'packages'))
+      .include.add(path.resolve(__dirname, '../packages'))
       .end()
       .use('babel')
       .loader('babel-loader')

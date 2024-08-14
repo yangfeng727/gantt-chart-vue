@@ -1,6 +1,6 @@
 {
   "name": "gantt-chart-vue",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "private": false,
   "main": "dist/gantt-chart-vue.umd.min.js",
   "files": [
@@ -24,32 +24,12 @@
     "gantt vue",
     "甘特图"
   ],
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib packages/index.js --name gantt-chart-vue --dest dist"
-  },
   "dependencies": {
-    "core-js": "^3.8.3",
     "dayjs": "^1.11.10",
     "element-ui": "^2.15.14",
     "vue": "^2.6.14"
   },
-  "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "babel-plugin-component": "^1.1.1",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
-    "node-sass": "^9.0.0",
-    "sass-loader": "^10.5.2",
-    "vue-template-compiler": "^2.6.14"
-  },
   "engines": {
-    "node": ">= 16.0.0"
+    "node": ">= 14.0.0"
   }
 }
