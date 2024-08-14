@@ -1,6 +1,6 @@
 {
   "name": "gantt-chart-vue",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": false,
   "main": "dist/gantt-chart-vue.umd.min.js",
   "files": [
