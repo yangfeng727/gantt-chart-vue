@@ -126,7 +126,7 @@
             </ul>
 
             <!-- 内部标签 -->
-            <template v-for="(item, index) in tagList">
+            <template v-for="item in tagList">
               <tagItem :key="item.tagId" v-if="!item.hide" :tagItem="item" :tagMoveCallback="tagMove"
                 @tagDragStart="tagDragStart" @changeEnd="tagChangeEnd"
                 :style="{ background: getLegendConfig(item).color || '#000000' }" :dragable="tagItemDragable(item)"
@@ -208,13 +208,13 @@ const rowContentHeight = 28 // 单元格行高，不包含上下padding 【注�
 const tagHeight = 28 // tag 高度
 const tagMarginTop = 5 // tag 纵向margin高度
 const headerCellMinWidth = 100 // 顶部标题栏，每列最小宽度
-let minSowTagRow = 2 // 有数据时，单行内至少显示几行tag
+let minSowTagRow = 2 // 有数据时，单行内至少显示几行tag - 需求是任务行不能太矮，至少也要显示两行高度
 
 // 计算的高度-不用改
 const minRowHeight = 2 * rowPaddingTop + Math.min(...[tagHeight, rowContentHeight]) // 行最小高度 - 无数据的行
 minSowTagRow = minSowTagRow < 0 ? 1 : minSowTagRow
-let hasTagsDataMinRowHeight = 2 * rowPaddingTop + minSowTagRow * tagHeight + (minSowTagRow - 1) * tagMarginTop // -有数据的行 - 至少显示几行tag【需求：有数据的行高度要高点】
-hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight])
+let hasTagsDataMinRowHeight = 2 * rowPaddingTop + minSowTagRow * tagHeight + (minSowTagRow - 1) * tagMarginTop // -有数据的行 - 至少显示几行tag【需求：有数据的行高度要高点】 - 第一行 tag 不需要margin-top
+hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]) // 有数据行的最小高度
 
 export default {
   name: 'gantt-chart-vue',
@@ -849,7 +849,7 @@ export default {
     },
 
     /**
-     * 生成禁用行对应的纵坐标数组 - 这里认定纵向没有滚动条！！
+     * 生成禁用行对应的纵坐标数组
      * @return {min:number,max:number}[]
      */
     getDisabledYS() {
@@ -1945,7 +1945,7 @@ export default {
      * @param {*} tagType 行内的哪个类型的tag，也就是legend的类型
      */
     calcTagInRowTop(parentKey, tagType) {
-      if (!parentKey || !tagType) return 0
+      if (!parentKey || utils.isNull(tagType)) return 0
 
       let rowsInfo = this.rowsInfo
       let findRow = rowsInfo.find(row => row.label === parentKey)
@@ -1975,7 +1975,7 @@ export default {
      * @param {*} tagType 行内的哪个类型的tag，也就是legend的类型
      */
     calcTagOffsetCanvasTop(parentKey, tagType) {
-      if (!parentKey || !tagType) return 0
+      if (!parentKey || utils.isNull(tagType)) return 0
       let rowTop = this.calcRowTopByRowLabel(parentKey)
 
       // 计算tag 距离所在行顶部距离 - 注意这里是当前行内

@@ -171,7 +171,7 @@ export const utils = {
 
   // 获取css属性值的单位，如：px、rem、%
   getUnit(val = "") {
-    return val.match(/[^.\d]*/gi).find((item) => item) || "";
+    return (val.match(/[^.\d]*/gi) || []).find((item) => item) || "";
   },
   // 去掉值后的单位：eg： 10px -> 10
   delValUnit(val, unit) {
