@@ -131,7 +131,7 @@
                 @tagDragStart="tagDragStart" @changeEnd="tagChangeEnd"
                 :style="{ background: getLegendConfig(item).color || '#000000' }" :dragable="tagItemDragable(item)"
                 :closeTip="tagItemCloseTip(item)" :showOperateMark="tagHasOperateMenu(item)" :showSelected="showSelected"
-                @contextmenu="tagContextmenuHandle" @click="tagClickHandle" @blur="tagblurHandle">
+                @tagContextmenu="tagContextmenuHandle" @tagClick="tagClickHandle" @tagBlur="tagblurHandle">
 
                 <!-- tag hover显示的内容插槽 -->
                 <template #tagTip="{ tagData }">
@@ -1354,7 +1354,7 @@ export default {
 
       // console.log(tagItemDom, tagItem, left, top, 'tagMove')
       this.clearGuideLine() // 清除参考线
-      this.closeAllMenu()
+      this.closeAllMenu('tagMove')
       if (!tagItemDom) return
       let tagItemDomWidth = utils.getDOMWH(tagItemDom).w
       let tagItemDomHeight = utils.getDOMWH(tagItemDom).h
@@ -1668,8 +1668,10 @@ export default {
 
     // tag 右键菜单回调
     tagContextmenuHandle(param) {
+      // console.log('tagcontextmenuHandle', param)
+
       // 关闭其他菜单
-      this.closeAllMenu()
+      this.closeAllMenu('tagContextmenuHandle')
       this.autoCloseTagMenu = false // 阻止tag失去焦点自动关闭tag menu
       let { tagItem, showOperateMark } = param
       if (this.readOnly || !showOperateMark) return
@@ -2272,7 +2274,7 @@ export default {
       return scrollXBarDom.scrollLeft
     },
     scrollXHandle(e) {
-      this.closeAllMenu() // 关闭弹出的其他菜单，避免复杂定位问题
+      this.closeAllMenu('scrollXHandle') // 关闭弹出的其他菜单，避免复杂定位问题
 
       let ganttBoxRefDom = this.$refs['ganttBoxRefDom']
       let scrollXBarDom = this.$refs['scrollXBarDom'] // 横向滚动条
@@ -2323,7 +2325,7 @@ export default {
     },
     // 纵向滚动条滚动位置变化，同步到其他纵向滚动项
     scrollYHandle(e) {
-      this.closeAllMenu() // 关闭弹出的其他菜单，避免复杂定位问题
+      this.closeAllMenu('scrollYHandle') // 关闭弹出的其他菜单，避免复杂定位问题
 
       let ganttBoxRefDom = this.$refs['ganttBoxRefDom']
       let scrollYBarDom = this.$refs['scrollYBarDom'] // 纵向滚动条
@@ -2469,7 +2471,7 @@ export default {
         // e.stopPropagation();
 
         // 关闭其他菜单
-        this.closeAllMenu()
+        this.closeAllMenu('rightMenu_init')
 
         // 只读模式
         if (this.readOnly) return false
@@ -2553,7 +2555,7 @@ export default {
       e.preventDefault();
 
       // 关闭其他菜单
-      this.closeAllMenu()
+      this.closeAllMenu('taskMenu_Open')
 
       if (this.readOnly) return // 只读模式
       if (!row || !Object.keys(row).length) return
@@ -2706,7 +2708,8 @@ export default {
     //#endregion 重要的事件参数
 
     // 关闭甘特图所有菜单
-    closeAllMenu() {
+    closeAllMenu(eventHandle) {
+      // console.log('触发函数:', eventHandle)
       // 关闭右键菜单
       this.rightMenu_close()
       this.taskMenu_close()
@@ -2716,12 +2719,12 @@ export default {
     // 甘特图失去焦点
     ganTTblur() {
       // console.log('甘特图失去焦点')
-      this.closeAllMenu()
+      this.closeAllMenu('ganTTblur')
     },
     // 甘特图点击
     ganTTClick(e) {
       // console.log('甘特图点击')
-      this.closeAllMenu()
+      this.closeAllMenu('ganTTClick')
       this.clickShowMarkLine(e)
     },
     // 画布resize -重新计算相关布局元素
@@ -2730,7 +2733,7 @@ export default {
       this.tickTimer = setTimeout(() => {
         console.log('甘特图 resize...')
         try {
-          this.closeAllMenu()
+          this.closeAllMenu('event_windowResize')
           this.refreshGTTWH() // 计算甘特图宽高
 
           // 初次渲染时滚动横向滚动条到任务开始时间位置

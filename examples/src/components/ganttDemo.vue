@@ -4,6 +4,7 @@
     <div class="header" v-if="showOther">
       <span>显示模式：</span>
       <el-select
+        style="width: 200px;"
         v-model="showMode"
         placeholder="请选择"
         @change="filterGanTTTags"
@@ -205,7 +206,7 @@ export default {
                 dragable: true, // 此类型tag是否可以拖动,优先级最高，不设置将取legend的dragable，都没有则禁止拖动，注意：只有true|false才会生效
                 className: "tagSpecial", // 可单独设置tag样式名
                 selected: false, // 当前tag是否选中-有选中样式
-                preIcon: "el-icon-video-camera-solid", // tag前的图标
+                preIcon: "iconfont icon-shijian", // tag前的图标
                 hide: false, // 是否隐藏此tag
               },
               {

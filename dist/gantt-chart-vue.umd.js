@@ -144,7 +144,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".el-popover__title,.el-popper[x-placem
 
 /***/ }),
 
-/***/ 7509:
+/***/ 1746:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -158,14 +158,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _examples_node_modules_store_css_loader_6_11_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_examples_node_modules_store_css_loader_6_11_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".gt-title[data-v-6d6a02ba]{align-items:center;justify-content:center;flex:none}.gantt-chart-wrap[data-v-6d6a02ba],.gt-title[data-v-6d6a02ba]{display:flex;box-sizing:border-box}.gantt-chart-wrap[data-v-6d6a02ba]{width:100%;height:100%;flex-direction:column;overflow:hidden}.gap[data-v-6d6a02ba]{height:25px;flex:none;z-index:5}.gantt-chart-box[data-v-6d6a02ba],.gap[data-v-6d6a02ba]{width:100%;position:relative}.gantt-chart-box[data-v-6d6a02ba]{flex-grow:1;height:100%;display:flex;flex-direction:column}.gantt-chart-box:hover .scrollXBar[data-v-6d6a02ba],.gantt-chart-box:hover .scrollYBar[data-v-6d6a02ba]{opacity:1!important}.gantt-chart-box>canvas[data-v-6d6a02ba]{left:0;top:0;position:absolute;width:100%;height:100%;z-index:7;pointer-events:none}.gantt-chart-box .headerCol[data-v-6d6a02ba],.gantt-chart-box .row-header .header-right .paint-col[data-v-6d6a02ba],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col[data-v-6d6a02ba]{flex:none;height:100%;display:flex;align-items:center;justify-content:center;position:relative;box-sizing:border-box}.gantt-chart-box .headerCol>.name[data-v-6d6a02ba],.gantt-chart-box .row-header .header-right .paint-col>.name[data-v-6d6a02ba],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col>.name[data-v-6d6a02ba]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;box-sizing:border-box}.gantt-chart-box .headerCol .sLine[data-v-6d6a02ba],.gantt-chart-box .row-header .header-right .paint-col .sLine[data-v-6d6a02ba],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col .sLine[data-v-6d6a02ba]{position:absolute;left:0;top:0;width:1px;height:100%;background:#000;z-index:3;pointer-events:none}.gantt-chart-box .headerCol .sLine[data-v-6d6a02ba]:first-child,.gantt-chart-box .row-header .header-right .paint-col .sLine[data-v-6d6a02ba]:first-child,.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col .sLine[data-v-6d6a02ba]:first-child{display:none}.gantt-chart-box .scrollX[data-v-6d6a02ba]{display:flex;flex-direction:flex-start;align-items:center;height:100%;flex:none;position:relative}.gantt-chart-box .row-header[data-v-6d6a02ba]{position:relative;z-index:2;display:flex;justify-content:flex-start;align-items:center;text-align:center;background-color:#e9ebf0;box-sizing:border-box;z-index:5}.gantt-chart-box .row-header .header-right[data-v-6d6a02ba]{flex:auto;height:100%;overflow:hidden}.gantt-chart-box .row-bottom[data-v-6d6a02ba]{position:relative;z-index:2;display:flex;justify-content:space-between}.gantt-chart-box .row-bottom .box-left[data-v-6d6a02ba]{display:flex;flex-direction:column;flex:none;position:relative}.gantt-chart-box .row-bottom .box-left .paint-row[data-v-6d6a02ba]{width:100%;flex:none;text-align:center;justify-content:center;display:flex;align-items:center;background-color:#fafafa;position:relative;box-sizing:border-box}.gantt-chart-box .row-bottom .box-left .paint-row.disabled[data-v-6d6a02ba]{flex:none;color:#b5b6bf}.gantt-chart-box .row-bottom .box-left .paint-row.canSelected[data-v-6d6a02ba]{cursor:pointer}.gantt-chart-box .row-bottom .box-left .paint-row.canSelected[data-v-6d6a02ba]:hover{opacity:.7}.gantt-chart-box .row-bottom .box-left .paint-row.selected[data-v-6d6a02ba]:after{content:\" \";pointer-events:none;position:absolute;right:-7px;bottom:-7px;border-right:8px solid #365be4;border-top:8px solid transparent;border-left:8px solid transparent;border-bottom:8px solid transparent;transform:rotate(225deg)}.gantt-chart-box .row-bottom .box-left .paint-row>.name[data-v-6d6a02ba]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%}.gantt-chart-box .row-bottom .box-left .paint-row .sLine[data-v-6d6a02ba]{position:absolute;left:0;top:0;width:100%;height:1px;background:#000;z-index:3;pointer-events:none}.gantt-chart-box .row-bottom .box-right[data-v-6d6a02ba]{flex:auto;overflow:hidden;position:relative}.gantt-chart-box .row-bottom .box-paint[data-v-6d6a02ba]{position:relative;box-sizing:border-box}.gantt-chart-box .row-bottom .box-paint canvas[data-v-6d6a02ba]{left:0;top:0;position:absolute;width:100%;height:100%;z-index:1;pointer-events:none}.gantt-chart-box .row-bottom .scrollXBar[data-v-6d6a02ba]{transition:all .2s ease;opacity:.3;position:absolute;left:0;bottom:0;overflow-y:hidden;overflow-x:auto;width:100%;height:10px;z-index:999}.gantt-chart-box .row-bottom .scrollXBar[data-v-6d6a02ba]::-webkit-scrollbar-track-piece{background:transparent;border-radius:20px}.gantt-chart-box .row-bottom .scrollXBar[data-v-6d6a02ba]::-webkit-scrollbar{width:10px;height:10px}.gantt-chart-box .row-bottom .scrollXBar[data-v-6d6a02ba]::-webkit-scrollbar-thumb{background:hsla(217,6%,54%,.333);border-radius:20px}.gantt-chart-box .row-bottom .scrollXBar>div[data-v-6d6a02ba]{height:10px}.gantt-chart-box .row-bottom .scrollYBar[data-v-6d6a02ba]{transition:all .2s ease;opacity:.3;position:absolute;right:0;top:0;overflow-y:auto;overflow-x:hidden;height:100%;width:10px;z-index:999}.gantt-chart-box .row-bottom .scrollYBar[data-v-6d6a02ba]::-webkit-scrollbar-track-piece{background:transparent;border-radius:20px}.gantt-chart-box .row-bottom .scrollYBar[data-v-6d6a02ba]::-webkit-scrollbar{width:10px;height:10px}.gantt-chart-box .row-bottom .scrollYBar[data-v-6d6a02ba]::-webkit-scrollbar-thumb{background:hsla(217,6%,54%,.333);border-radius:20px}.gantt-chart-box .row-bottom .scrollYBar>div[data-v-6d6a02ba]{width:10px}.gantt-chart-box .stat-bottom[data-v-6d6a02ba]{display:flex;justify-content:space-between;align-items:stretch;background-color:#e9ebf0;position:relative;z-index:5}.gantt-chart-box .stat-bottom .stat-bottom_title[data-v-6d6a02ba]{flex:none;display:flex;align-items:center;justify-content:center}.gantt-chart-box .stat-bottom .stat-bottom_right[data-v-6d6a02ba]{flex:auto;height:auto;overflow:hidden}.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col[data-v-6d6a02ba]{text-align:center}.menu-common[data-v-6d6a02ba],.rightClickMenu[data-v-6d6a02ba],.tag-menu[data-v-6d6a02ba],.task-menu[data-v-6d6a02ba]{box-sizing:border-box;background:#fff;box-shadow:0 4px 12px 0 rgba(82,92,108,.16);border-radius:4px;font-family:PingFangSC-Regular;font-size:14px;color:#11152b;line-height:18px;font-weight:400;text-align:center}.rightClickMenu[data-v-6d6a02ba]{min-width:104px;position:absolute;left:0;top:0;display:none;z-index:7;transition:top .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none}.rightClickMenu li[data-v-6d6a02ba],.rightClickMenu ul[data-v-6d6a02ba]{list-style:none}.rightClickMenu ul[data-v-6d6a02ba]{padding:0;margin:0;display:flex;flex-direction:column}.rightClickMenu ul li[data-v-6d6a02ba]{font-size:14px;cursor:pointer;box-sizing:border-box;padding:5px 8px;display:flex;align-items:center;justify-content:center;color:#000}.rightClickMenu ul li.disabled[data-v-6d6a02ba]{cursor:not-allowed;background-color:#ddd}.rightClickMenu ul li[data-v-6d6a02ba]:not(.disabled):hover{color:#365be4;background-color:#e8edff}.tag-menu[data-v-6d6a02ba],.task-menu[data-v-6d6a02ba]{min-width:76px;position:absolute;left:0;top:0;z-index:10;transition:top .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none;list-style:none;margin:0;padding:0;display:flex;flex-direction:column}.tag-menu li[data-v-6d6a02ba],.task-menu li[data-v-6d6a02ba]{list-style:none;font-size:14px;cursor:pointer;box-sizing:border-box;padding:5px 8px;display:flex;align-items:center;justify-content:center;color:#000}.tag-menu li.disabled[data-v-6d6a02ba],.task-menu li.disabled[data-v-6d6a02ba]{cursor:not-allowed;background-color:#ddd}.tag-menu li[data-v-6d6a02ba]:not(.disabled):hover,.task-menu li[data-v-6d6a02ba]:not(.disabled):hover{color:#365be4;background-color:#e8edff}[data-v-6d6a02ba] .tagSpecial{font-weight:700;color:#000}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".gt-title[data-v-4a4fe816]{align-items:center;justify-content:center;flex:none}.gantt-chart-wrap[data-v-4a4fe816],.gt-title[data-v-4a4fe816]{display:flex;box-sizing:border-box}.gantt-chart-wrap[data-v-4a4fe816]{width:100%;height:100%;flex-direction:column;overflow:hidden}.gap[data-v-4a4fe816]{height:25px;flex:none;z-index:5}.gantt-chart-box[data-v-4a4fe816],.gap[data-v-4a4fe816]{width:100%;position:relative}.gantt-chart-box[data-v-4a4fe816]{flex-grow:1;height:100%;display:flex;flex-direction:column}.gantt-chart-box:hover .scrollXBar[data-v-4a4fe816],.gantt-chart-box:hover .scrollYBar[data-v-4a4fe816]{opacity:1!important}.gantt-chart-box>canvas[data-v-4a4fe816]{left:0;top:0;position:absolute;width:100%;height:100%;z-index:7;pointer-events:none}.gantt-chart-box .headerCol[data-v-4a4fe816],.gantt-chart-box .row-header .header-right .paint-col[data-v-4a4fe816],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col[data-v-4a4fe816]{flex:none;height:100%;display:flex;align-items:center;justify-content:center;position:relative;box-sizing:border-box}.gantt-chart-box .headerCol>.name[data-v-4a4fe816],.gantt-chart-box .row-header .header-right .paint-col>.name[data-v-4a4fe816],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col>.name[data-v-4a4fe816]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;box-sizing:border-box}.gantt-chart-box .headerCol .sLine[data-v-4a4fe816],.gantt-chart-box .row-header .header-right .paint-col .sLine[data-v-4a4fe816],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col .sLine[data-v-4a4fe816]{position:absolute;left:0;top:0;width:1px;height:100%;background:#000;z-index:3;pointer-events:none}.gantt-chart-box .headerCol .sLine[data-v-4a4fe816]:first-child,.gantt-chart-box .row-header .header-right .paint-col .sLine[data-v-4a4fe816]:first-child,.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col .sLine[data-v-4a4fe816]:first-child{display:none}.gantt-chart-box .scrollX[data-v-4a4fe816]{display:flex;flex-direction:flex-start;align-items:center;height:100%;flex:none;position:relative}.gantt-chart-box .row-header[data-v-4a4fe816]{position:relative;z-index:2;display:flex;justify-content:flex-start;align-items:center;text-align:center;background-color:#e9ebf0;box-sizing:border-box;z-index:5}.gantt-chart-box .row-header .header-right[data-v-4a4fe816]{flex:auto;height:100%;overflow:hidden}.gantt-chart-box .row-bottom[data-v-4a4fe816]{position:relative;z-index:2;display:flex;justify-content:space-between}.gantt-chart-box .row-bottom .box-left[data-v-4a4fe816]{display:flex;flex-direction:column;flex:none;position:relative}.gantt-chart-box .row-bottom .box-left .paint-row[data-v-4a4fe816]{width:100%;flex:none;text-align:center;justify-content:center;display:flex;align-items:center;background-color:#fafafa;position:relative;box-sizing:border-box}.gantt-chart-box .row-bottom .box-left .paint-row.disabled[data-v-4a4fe816]{flex:none;color:#b5b6bf}.gantt-chart-box .row-bottom .box-left .paint-row.canSelected[data-v-4a4fe816]{cursor:pointer}.gantt-chart-box .row-bottom .box-left .paint-row.canSelected[data-v-4a4fe816]:hover{opacity:.7}.gantt-chart-box .row-bottom .box-left .paint-row.selected[data-v-4a4fe816]:after{content:\" \";pointer-events:none;position:absolute;right:-7px;bottom:-7px;border-right:8px solid #365be4;border-top:8px solid transparent;border-left:8px solid transparent;border-bottom:8px solid transparent;transform:rotate(225deg)}.gantt-chart-box .row-bottom .box-left .paint-row>.name[data-v-4a4fe816]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%}.gantt-chart-box .row-bottom .box-left .paint-row .sLine[data-v-4a4fe816]{position:absolute;left:0;top:0;width:100%;height:1px;background:#000;z-index:3;pointer-events:none}.gantt-chart-box .row-bottom .box-right[data-v-4a4fe816]{flex:auto;overflow:hidden;position:relative}.gantt-chart-box .row-bottom .box-paint[data-v-4a4fe816]{position:relative;box-sizing:border-box}.gantt-chart-box .row-bottom .box-paint canvas[data-v-4a4fe816]{left:0;top:0;position:absolute;width:100%;height:100%;z-index:1;pointer-events:none}.gantt-chart-box .row-bottom .scrollXBar[data-v-4a4fe816]{transition:all .2s ease;opacity:.3;position:absolute;left:0;bottom:0;overflow-y:hidden;overflow-x:auto;width:100%;height:10px;z-index:999}.gantt-chart-box .row-bottom .scrollXBar[data-v-4a4fe816]::-webkit-scrollbar-track-piece{background:transparent;border-radius:20px}.gantt-chart-box .row-bottom .scrollXBar[data-v-4a4fe816]::-webkit-scrollbar{width:10px;height:10px}.gantt-chart-box .row-bottom .scrollXBar[data-v-4a4fe816]::-webkit-scrollbar-thumb{background:hsla(217,6%,54%,.333);border-radius:20px}.gantt-chart-box .row-bottom .scrollXBar>div[data-v-4a4fe816]{height:10px}.gantt-chart-box .row-bottom .scrollYBar[data-v-4a4fe816]{transition:all .2s ease;opacity:.3;position:absolute;right:0;top:0;overflow-y:auto;overflow-x:hidden;height:100%;width:10px;z-index:999}.gantt-chart-box .row-bottom .scrollYBar[data-v-4a4fe816]::-webkit-scrollbar-track-piece{background:transparent;border-radius:20px}.gantt-chart-box .row-bottom .scrollYBar[data-v-4a4fe816]::-webkit-scrollbar{width:10px;height:10px}.gantt-chart-box .row-bottom .scrollYBar[data-v-4a4fe816]::-webkit-scrollbar-thumb{background:hsla(217,6%,54%,.333);border-radius:20px}.gantt-chart-box .row-bottom .scrollYBar>div[data-v-4a4fe816]{width:10px}.gantt-chart-box .stat-bottom[data-v-4a4fe816]{display:flex;justify-content:space-between;align-items:stretch;background-color:#e9ebf0;position:relative;z-index:5}.gantt-chart-box .stat-bottom .stat-bottom_title[data-v-4a4fe816]{flex:none;display:flex;align-items:center;justify-content:center}.gantt-chart-box .stat-bottom .stat-bottom_right[data-v-4a4fe816]{flex:auto;height:auto;overflow:hidden}.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col[data-v-4a4fe816]{text-align:center}.menu-common[data-v-4a4fe816],.rightClickMenu[data-v-4a4fe816],.tag-menu[data-v-4a4fe816],.task-menu[data-v-4a4fe816]{box-sizing:border-box;background:#fff;box-shadow:0 4px 12px 0 rgba(82,92,108,.16);border-radius:4px;font-family:PingFangSC-Regular;font-size:14px;color:#11152b;line-height:18px;font-weight:400;text-align:center}.rightClickMenu[data-v-4a4fe816]{min-width:104px;position:absolute;left:0;top:0;display:none;z-index:7;transition:top .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none}.rightClickMenu li[data-v-4a4fe816],.rightClickMenu ul[data-v-4a4fe816]{list-style:none}.rightClickMenu ul[data-v-4a4fe816]{padding:0;margin:0;display:flex;flex-direction:column}.rightClickMenu ul li[data-v-4a4fe816]{font-size:14px;cursor:pointer;box-sizing:border-box;padding:5px 8px;display:flex;align-items:center;justify-content:center;color:#000}.rightClickMenu ul li.disabled[data-v-4a4fe816]{cursor:not-allowed;background-color:#ddd}.rightClickMenu ul li[data-v-4a4fe816]:not(.disabled):hover{color:#365be4;background-color:#e8edff}.tag-menu[data-v-4a4fe816],.task-menu[data-v-4a4fe816]{min-width:76px;position:absolute;left:0;top:0;z-index:10;transition:top .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none;list-style:none;margin:0;padding:0;display:flex;flex-direction:column}.tag-menu li[data-v-4a4fe816],.task-menu li[data-v-4a4fe816]{list-style:none;font-size:14px;cursor:pointer;box-sizing:border-box;padding:5px 8px;display:flex;align-items:center;justify-content:center;color:#000}.tag-menu li.disabled[data-v-4a4fe816],.task-menu li.disabled[data-v-4a4fe816]{cursor:not-allowed;background-color:#ddd}.tag-menu li[data-v-4a4fe816]:not(.disabled):hover,.task-menu li[data-v-4a4fe816]:not(.disabled):hover{color:#365be4;background-color:#e8edff}[data-v-4a4fe816] .tagSpecial{font-weight:700;color:#000}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ 9140:
+/***/ 6601:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -179,14 +179,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _examples_node_modules_store_css_loader_6_11_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_examples_node_modules_store_css_loader_6_11_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".tagItem[data-v-371f4072]{position:absolute;width:0;height:0;left:0;top:0;z-index:4;background-color:#365be4;box-sizing:border-box;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;transition:transform .2s ease}.tagItem.dragable[data-v-371f4072]{cursor:move}.tagItem.moving[data-v-371f4072]{box-shadow:0 0 16px #010a15;z-index:9}.tagItem.selected[data-v-371f4072]{outline:2px dashed red}.tagItem .tagLabel[data-v-371f4072]{-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%;height:100%;text-align:center;display:flex;align-items:center;justify-content:center;padding:0 15px;box-sizing:border-box}.tagItem[data-v-371f4072] >span{width:100%;height:100%}.tagItem[data-v-371f4072] .el-popover__reference-wrapper{display:block;width:100%;height:100%}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".tagItem[data-v-088137a7]{position:absolute;width:0;height:0;left:0;top:0;z-index:4;background-color:#365be4;box-sizing:border-box;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;transition:transform .2s ease}.tagItem.dragable[data-v-088137a7]{cursor:move}.tagItem.moving[data-v-088137a7]{box-shadow:0 0 16px #010a15;z-index:9}.tagItem.selected[data-v-088137a7]{outline:2px dashed red}.tagItem .tagLabel[data-v-088137a7]{-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%;height:100%;text-align:center;display:flex;align-items:center;justify-content:center;padding:0 15px;box-sizing:border-box}.tagItem[data-v-088137a7] >span{width:100%;height:100%}.tagItem[data-v-088137a7] .el-popover__reference-wrapper{display:block;width:100%;height:100%}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ 2924:
+/***/ 3013:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15476,51 +15476,51 @@ var update = add("087b162b", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ 4869:
+/***/ 9938:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(7509);
+var content = __webpack_require__(1746);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(5808)/* ["default"] */ .A)
-var update = add("3508bdfc", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("261207bf", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
-/***/ 9556:
+/***/ 3481:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(9140);
+var content = __webpack_require__(6601);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(5808)/* ["default"] */ .A)
-var update = add("4129ccbc", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("a1b0c0de", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
-/***/ 2956:
+/***/ 5733:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2924);
+var content = __webpack_require__(3013);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(5808)/* ["default"] */ .A)
-var update = add("579c5046", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("3a47fa9b", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -17614,7 +17614,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: ./node_modules/.store/thread-loader@3.0.4/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/index.vue?vue&type=template&id=6d6a02ba&scoped=true
+;// CONCATENATED MODULE: ./node_modules/.store/thread-loader@3.0.4/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/index.vue?vue&type=template&id=4a4fe816&scoped=true
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
@@ -17798,9 +17798,9 @@ var render = function render() {
       on: {
         "tagDragStart": _vm.tagDragStart,
         "changeEnd": _vm.tagChangeEnd,
-        "contextmenu": _vm.tagContextmenuHandle,
-        "click": _vm.tagClickHandle,
-        "blur": _vm.tagblurHandle
+        "tagContextmenu": _vm.tagContextmenuHandle,
+        "tagClick": _vm.tagClickHandle,
+        "tagBlur": _vm.tagblurHandle
       },
       scopedSlots: _vm._u([{
         key: "tagTip",
@@ -18269,8 +18269,8 @@ function tagIsTouchDisabledRow({
 }) {
   return tagTop > disabledYMin - tagHeight && tagTop < disabledYMax;
 }
-;// CONCATENATED MODULE: ./node_modules/.store/thread-loader@3.0.4/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=template&id=371f4072&scoped=true
-var tagItemvue_type_template_id_371f4072_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/.store/thread-loader@3.0.4/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=template&id=088137a7&scoped=true
+var tagItemvue_type_template_id_088137a7_scoped_true_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -18348,7 +18348,7 @@ var tagItemvue_type_template_id_371f4072_scoped_true_render = function render() 
     }
   })], 1)], 2)]], 2);
 };
-var tagItemvue_type_template_id_371f4072_scoped_true_staticRenderFns = [];
+var tagItemvue_type_template_id_088137a7_scoped_true_staticRenderFns = [];
 
 // EXTERNAL MODULE: ./node_modules/.store/element-ui@2.15.14/node_modules/element-ui/lib/theme-chalk/popover.css
 var popover = __webpack_require__(878);
@@ -18574,7 +18574,7 @@ var component = normalizeComponent(
   methods: {
     // 右键菜单
     contextmenuHandle(e) {
-      this.$emit('contextmenu', {
+      this.$emit('tagContextmenu', {
         e,
         tagItem: this.tagItem,
         // 其他参数直接回传，父组件不必重新计算
@@ -18586,13 +18586,13 @@ var component = normalizeComponent(
     },
     tagBlur() {
       // console.log('tagBlur 111')
-      this.$emit('blur');
+      this.$emit('tagBlur');
     },
     // 因为点击tag 会触发mousedown，mouseup，但不会触发mousemove，因此可以利用这点来区分点击还是拖动
     clickHandle(e) {
       if (this.moving || this.moved) return; // 正在移动或者移动过，都不算作点击事件 
       // console.log('click', e)
-      this.$emit('click', {
+      this.$emit('tagClick', {
         e,
         tagItem: this.tagItem,
         // 其他参数直接回传，父组件不必重新计算
@@ -18732,13 +18732,13 @@ var component = normalizeComponent(
 });
 ;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue?vue&type=script&lang=js
  /* harmony default export */ var ganttChartVue_tagItemvue_type_script_lang_js = (tagItemvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-64.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=0&id=371f4072&prod&lang=scss&scoped=true
-var tagItemvue_type_style_index_0_id_371f4072_prod_lang_scss_scoped_true = __webpack_require__(9556);
-;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=0&id=371f4072&prod&lang=scss&scoped=true
+// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-64.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=0&id=088137a7&prod&lang=scss&scoped=true
+var tagItemvue_type_style_index_0_id_088137a7_prod_lang_scss_scoped_true = __webpack_require__(3481);
+;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=0&id=088137a7&prod&lang=scss&scoped=true
 
-// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-64.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=1&id=371f4072&prod&lang=scss
-var tagItemvue_type_style_index_1_id_371f4072_prod_lang_scss = __webpack_require__(2956);
-;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=1&id=371f4072&prod&lang=scss
+// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-64.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=1&id=088137a7&prod&lang=scss
+var tagItemvue_type_style_index_1_id_088137a7_prod_lang_scss = __webpack_require__(5733);
+;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=1&id=088137a7&prod&lang=scss
 
 ;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue
 
@@ -18752,11 +18752,11 @@ var tagItemvue_type_style_index_1_id_371f4072_prod_lang_scss = __webpack_require
 
 var tagItem_component = normalizeComponent(
   ganttChartVue_tagItemvue_type_script_lang_js,
-  tagItemvue_type_template_id_371f4072_scoped_true_render,
-  tagItemvue_type_template_id_371f4072_scoped_true_staticRenderFns,
+  tagItemvue_type_template_id_088137a7_scoped_true_render,
+  tagItemvue_type_template_id_088137a7_scoped_true_staticRenderFns,
   false,
   null,
-  "371f4072",
+  "088137a7",
   null
   
 )
@@ -20017,7 +20017,7 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
 
       // console.log(tagItemDom, tagItem, left, top, 'tagMove')
       this.clearGuideLine(); // 清除参考线
-      this.closeAllMenu();
+      this.closeAllMenu('tagMove');
       if (!tagItemDom) return;
       let tagItemDomWidth = utils.getDOMWH(tagItemDom).w;
       let tagItemDomHeight = utils.getDOMWH(tagItemDom).h;
@@ -20350,8 +20350,10 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
     },
     // tag 右键菜单回调
     tagContextmenuHandle(param) {
+      // console.log('tagcontextmenuHandle', param)
+
       // 关闭其他菜单
-      this.closeAllMenu();
+      this.closeAllMenu('tagContextmenuHandle');
       this.autoCloseTagMenu = false; // 阻止tag失去焦点自动关闭tag menu
       let {
         tagItem,
@@ -20955,7 +20957,7 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
       return scrollXBarDom.scrollLeft;
     },
     scrollXHandle(e) {
-      this.closeAllMenu(); // 关闭弹出的其他菜单，避免复杂定位问题
+      this.closeAllMenu('scrollXHandle'); // 关闭弹出的其他菜单，避免复杂定位问题
 
       let ganttBoxRefDom = this.$refs['ganttBoxRefDom'];
       let scrollXBarDom = this.$refs['scrollXBarDom']; // 横向滚动条
@@ -21004,7 +21006,7 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
     },
     // 纵向滚动条滚动位置变化，同步到其他纵向滚动项
     scrollYHandle(e) {
-      this.closeAllMenu(); // 关闭弹出的其他菜单，避免复杂定位问题
+      this.closeAllMenu('scrollYHandle'); // 关闭弹出的其他菜单，避免复杂定位问题
 
       let ganttBoxRefDom = this.$refs['ganttBoxRefDom'];
       let scrollYBarDom = this.$refs['scrollYBarDom']; // 纵向滚动条
@@ -21155,7 +21157,7 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
         // e.stopPropagation();
 
         // 关闭其他菜单
-        this.closeAllMenu();
+        this.closeAllMenu('rightMenu_init');
 
         // 只读模式
         if (this.readOnly) return false;
@@ -21244,7 +21246,7 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
       e.preventDefault();
 
       // 关闭其他菜单
-      this.closeAllMenu();
+      this.closeAllMenu('taskMenu_Open');
       if (this.readOnly) return; // 只读模式
       if (!row || !Object.keys(row).length) return;
       let taskBtnList = [];
@@ -21392,7 +21394,8 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
     //#endregion 重要的事件参数
 
     // 关闭甘特图所有菜单
-    closeAllMenu() {
+    closeAllMenu(eventHandle) {
+      // console.log('触发函数:', eventHandle)
       // 关闭右键菜单
       this.rightMenu_close();
       this.taskMenu_close();
@@ -21401,12 +21404,12 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
     // 甘特图失去焦点
     ganTTblur() {
       // console.log('甘特图失去焦点')
-      this.closeAllMenu();
+      this.closeAllMenu('ganTTblur');
     },
     // 甘特图点击
     ganTTClick(e) {
       // console.log('甘特图点击')
-      this.closeAllMenu();
+      this.closeAllMenu('ganTTClick');
       this.clickShowMarkLine(e);
     },
     // 画布resize -重新计算相关布局元素
@@ -21415,7 +21418,7 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
       this.tickTimer = setTimeout(() => {
         console.log('甘特图 resize...');
         try {
-          this.closeAllMenu();
+          this.closeAllMenu('event_windowResize');
           this.refreshGTTWH(); // 计算甘特图宽高
 
           // 初次渲染时滚动横向滚动条到任务开始时间位置
@@ -21481,9 +21484,9 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
 });
 ;// CONCATENATED MODULE: ../packages/components/ganttChartVue/index.vue?vue&type=script&lang=js
  /* harmony default export */ var components_ganttChartVuevue_type_script_lang_js = (ganttChartVuevue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-64.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/index.vue?vue&type=style&index=0&id=6d6a02ba&prod&lang=scss&scoped=true
-var ganttChartVuevue_type_style_index_0_id_6d6a02ba_prod_lang_scss_scoped_true = __webpack_require__(4869);
-;// CONCATENATED MODULE: ../packages/components/ganttChartVue/index.vue?vue&type=style&index=0&id=6d6a02ba&prod&lang=scss&scoped=true
+// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-64.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/index.vue?vue&type=style&index=0&id=4a4fe816&prod&lang=scss&scoped=true
+var ganttChartVuevue_type_style_index_0_id_4a4fe816_prod_lang_scss_scoped_true = __webpack_require__(9938);
+;// CONCATENATED MODULE: ../packages/components/ganttChartVue/index.vue?vue&type=style&index=0&id=4a4fe816&prod&lang=scss&scoped=true
 
 ;// CONCATENATED MODULE: ../packages/components/ganttChartVue/index.vue
 
@@ -21500,7 +21503,7 @@ var ganttChartVue_component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "6d6a02ba",
+  "4a4fe816",
   null
   
 )

@@ -97,7 +97,7 @@ export default {
   methods: {
     // 右键菜单
     contextmenuHandle(e) {
-      this.$emit('contextmenu', {
+      this.$emit('tagContextmenu', {
         e,
         tagItem: this.tagItem,
         // 其他参数直接回传，父组件不必重新计算
@@ -109,13 +109,13 @@ export default {
     },
     tagBlur(){
       // console.log('tagBlur 111')
-      this.$emit('blur')
+      this.$emit('tagBlur')
     },
     // 因为点击tag 会触发mousedown，mouseup，但不会触发mousemove，因此可以利用这点来区分点击还是拖动
     clickHandle(e) {
       if(this.moving || this.moved) return // 正在移动或者移动过，都不算作点击事件 
       // console.log('click', e)
-      this.$emit('click', {
+      this.$emit('tagClick', {
         e,
         tagItem: this.tagItem,
         // 其他参数直接回传，父组件不必重新计算
