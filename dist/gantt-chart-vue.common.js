@@ -134,7 +134,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".el-popover__title,.el-popper[x-placem
 
 /***/ }),
 
-/***/ 9846:
+/***/ 343:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -148,14 +148,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _examples_node_modules_store_css_loader_6_11_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_examples_node_modules_store_css_loader_6_11_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".gt-title[data-v-4a4fe816]{align-items:center;justify-content:center;flex:none}.gantt-chart-wrap[data-v-4a4fe816],.gt-title[data-v-4a4fe816]{display:flex;box-sizing:border-box}.gantt-chart-wrap[data-v-4a4fe816]{width:100%;height:100%;flex-direction:column;overflow:hidden}.gap[data-v-4a4fe816]{height:25px;flex:none;z-index:5}.gantt-chart-box[data-v-4a4fe816],.gap[data-v-4a4fe816]{width:100%;position:relative}.gantt-chart-box[data-v-4a4fe816]{flex-grow:1;height:100%;display:flex;flex-direction:column}.gantt-chart-box:hover .scrollXBar[data-v-4a4fe816],.gantt-chart-box:hover .scrollYBar[data-v-4a4fe816]{opacity:1!important}.gantt-chart-box>canvas[data-v-4a4fe816]{left:0;top:0;position:absolute;width:100%;height:100%;z-index:7;pointer-events:none}.gantt-chart-box .headerCol[data-v-4a4fe816],.gantt-chart-box .row-header .header-right .paint-col[data-v-4a4fe816],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col[data-v-4a4fe816]{flex:none;height:100%;display:flex;align-items:center;justify-content:center;position:relative;box-sizing:border-box}.gantt-chart-box .headerCol>.name[data-v-4a4fe816],.gantt-chart-box .row-header .header-right .paint-col>.name[data-v-4a4fe816],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col>.name[data-v-4a4fe816]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;box-sizing:border-box}.gantt-chart-box .headerCol .sLine[data-v-4a4fe816],.gantt-chart-box .row-header .header-right .paint-col .sLine[data-v-4a4fe816],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col .sLine[data-v-4a4fe816]{position:absolute;left:0;top:0;width:1px;height:100%;background:#000;z-index:3;pointer-events:none}.gantt-chart-box .headerCol .sLine[data-v-4a4fe816]:first-child,.gantt-chart-box .row-header .header-right .paint-col .sLine[data-v-4a4fe816]:first-child,.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col .sLine[data-v-4a4fe816]:first-child{display:none}.gantt-chart-box .scrollX[data-v-4a4fe816]{display:flex;flex-direction:flex-start;align-items:center;height:100%;flex:none;position:relative}.gantt-chart-box .row-header[data-v-4a4fe816]{position:relative;z-index:2;display:flex;justify-content:flex-start;align-items:center;text-align:center;background-color:#e9ebf0;box-sizing:border-box;z-index:5}.gantt-chart-box .row-header .header-right[data-v-4a4fe816]{flex:auto;height:100%;overflow:hidden}.gantt-chart-box .row-bottom[data-v-4a4fe816]{position:relative;z-index:2;display:flex;justify-content:space-between}.gantt-chart-box .row-bottom .box-left[data-v-4a4fe816]{display:flex;flex-direction:column;flex:none;position:relative}.gantt-chart-box .row-bottom .box-left .paint-row[data-v-4a4fe816]{width:100%;flex:none;text-align:center;justify-content:center;display:flex;align-items:center;background-color:#fafafa;position:relative;box-sizing:border-box}.gantt-chart-box .row-bottom .box-left .paint-row.disabled[data-v-4a4fe816]{flex:none;color:#b5b6bf}.gantt-chart-box .row-bottom .box-left .paint-row.canSelected[data-v-4a4fe816]{cursor:pointer}.gantt-chart-box .row-bottom .box-left .paint-row.canSelected[data-v-4a4fe816]:hover{opacity:.7}.gantt-chart-box .row-bottom .box-left .paint-row.selected[data-v-4a4fe816]:after{content:\" \";pointer-events:none;position:absolute;right:-7px;bottom:-7px;border-right:8px solid #365be4;border-top:8px solid transparent;border-left:8px solid transparent;border-bottom:8px solid transparent;transform:rotate(225deg)}.gantt-chart-box .row-bottom .box-left .paint-row>.name[data-v-4a4fe816]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%}.gantt-chart-box .row-bottom .box-left .paint-row .sLine[data-v-4a4fe816]{position:absolute;left:0;top:0;width:100%;height:1px;background:#000;z-index:3;pointer-events:none}.gantt-chart-box .row-bottom .box-right[data-v-4a4fe816]{flex:auto;overflow:hidden;position:relative}.gantt-chart-box .row-bottom .box-paint[data-v-4a4fe816]{position:relative;box-sizing:border-box}.gantt-chart-box .row-bottom .box-paint canvas[data-v-4a4fe816]{left:0;top:0;position:absolute;width:100%;height:100%;z-index:1;pointer-events:none}.gantt-chart-box .row-bottom .scrollXBar[data-v-4a4fe816]{transition:all .2s ease;opacity:.3;position:absolute;left:0;bottom:0;overflow-y:hidden;overflow-x:auto;width:100%;height:10px;z-index:999}.gantt-chart-box .row-bottom .scrollXBar[data-v-4a4fe816]::-webkit-scrollbar-track-piece{background:transparent;border-radius:20px}.gantt-chart-box .row-bottom .scrollXBar[data-v-4a4fe816]::-webkit-scrollbar{width:10px;height:10px}.gantt-chart-box .row-bottom .scrollXBar[data-v-4a4fe816]::-webkit-scrollbar-thumb{background:hsla(217,6%,54%,.333);border-radius:20px}.gantt-chart-box .row-bottom .scrollXBar>div[data-v-4a4fe816]{height:10px}.gantt-chart-box .row-bottom .scrollYBar[data-v-4a4fe816]{transition:all .2s ease;opacity:.3;position:absolute;right:0;top:0;overflow-y:auto;overflow-x:hidden;height:100%;width:10px;z-index:999}.gantt-chart-box .row-bottom .scrollYBar[data-v-4a4fe816]::-webkit-scrollbar-track-piece{background:transparent;border-radius:20px}.gantt-chart-box .row-bottom .scrollYBar[data-v-4a4fe816]::-webkit-scrollbar{width:10px;height:10px}.gantt-chart-box .row-bottom .scrollYBar[data-v-4a4fe816]::-webkit-scrollbar-thumb{background:hsla(217,6%,54%,.333);border-radius:20px}.gantt-chart-box .row-bottom .scrollYBar>div[data-v-4a4fe816]{width:10px}.gantt-chart-box .stat-bottom[data-v-4a4fe816]{display:flex;justify-content:space-between;align-items:stretch;background-color:#e9ebf0;position:relative;z-index:5}.gantt-chart-box .stat-bottom .stat-bottom_title[data-v-4a4fe816]{flex:none;display:flex;align-items:center;justify-content:center}.gantt-chart-box .stat-bottom .stat-bottom_right[data-v-4a4fe816]{flex:auto;height:auto;overflow:hidden}.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col[data-v-4a4fe816]{text-align:center}.menu-common[data-v-4a4fe816],.rightClickMenu[data-v-4a4fe816],.tag-menu[data-v-4a4fe816],.task-menu[data-v-4a4fe816]{box-sizing:border-box;background:#fff;box-shadow:0 4px 12px 0 rgba(82,92,108,.16);border-radius:4px;font-family:PingFangSC-Regular;font-size:14px;color:#11152b;line-height:18px;font-weight:400;text-align:center}.rightClickMenu[data-v-4a4fe816]{min-width:104px;position:absolute;left:0;top:0;display:none;z-index:7;transition:top .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none}.rightClickMenu li[data-v-4a4fe816],.rightClickMenu ul[data-v-4a4fe816]{list-style:none}.rightClickMenu ul[data-v-4a4fe816]{padding:0;margin:0;display:flex;flex-direction:column}.rightClickMenu ul li[data-v-4a4fe816]{font-size:14px;cursor:pointer;box-sizing:border-box;padding:5px 8px;display:flex;align-items:center;justify-content:center;color:#000}.rightClickMenu ul li.disabled[data-v-4a4fe816]{cursor:not-allowed;background-color:#ddd}.rightClickMenu ul li[data-v-4a4fe816]:not(.disabled):hover{color:#365be4;background-color:#e8edff}.tag-menu[data-v-4a4fe816],.task-menu[data-v-4a4fe816]{min-width:76px;position:absolute;left:0;top:0;z-index:10;transition:top .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none;list-style:none;margin:0;padding:0;display:flex;flex-direction:column}.tag-menu li[data-v-4a4fe816],.task-menu li[data-v-4a4fe816]{list-style:none;font-size:14px;cursor:pointer;box-sizing:border-box;padding:5px 8px;display:flex;align-items:center;justify-content:center;color:#000}.tag-menu li.disabled[data-v-4a4fe816],.task-menu li.disabled[data-v-4a4fe816]{cursor:not-allowed;background-color:#ddd}.tag-menu li[data-v-4a4fe816]:not(.disabled):hover,.task-menu li[data-v-4a4fe816]:not(.disabled):hover{color:#365be4;background-color:#e8edff}[data-v-4a4fe816] .tagSpecial{font-weight:700;color:#000}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".gt-title[data-v-2b60b024]{align-items:center;justify-content:center;flex:none}.gantt-chart-wrap[data-v-2b60b024],.gt-title[data-v-2b60b024]{display:flex;box-sizing:border-box}.gantt-chart-wrap[data-v-2b60b024]{width:100%;height:100%;flex-direction:column;overflow:hidden}.gap[data-v-2b60b024]{height:25px;flex:none;z-index:5}.gantt-chart-box[data-v-2b60b024],.gap[data-v-2b60b024]{width:100%;position:relative}.gantt-chart-box[data-v-2b60b024]{flex-grow:1;height:100%;display:flex;flex-direction:column}.gantt-chart-box:hover .scrollXBar[data-v-2b60b024],.gantt-chart-box:hover .scrollYBar[data-v-2b60b024]{opacity:1!important}.gantt-chart-box>canvas[data-v-2b60b024]{left:0;top:0;position:absolute;width:100%;height:100%;z-index:7;pointer-events:none}.gantt-chart-box .headerCol[data-v-2b60b024],.gantt-chart-box .row-header .header-right .paint-col[data-v-2b60b024],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col[data-v-2b60b024]{flex:none;height:100%;display:flex;align-items:center;justify-content:center;position:relative;box-sizing:border-box}.gantt-chart-box .headerCol>.name[data-v-2b60b024],.gantt-chart-box .row-header .header-right .paint-col>.name[data-v-2b60b024],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col>.name[data-v-2b60b024]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;box-sizing:border-box}.gantt-chart-box .headerCol .sLine[data-v-2b60b024],.gantt-chart-box .row-header .header-right .paint-col .sLine[data-v-2b60b024],.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col .sLine[data-v-2b60b024]{position:absolute;left:0;top:0;width:1px;height:100%;background:#000;z-index:3;pointer-events:none}.gantt-chart-box .headerCol .sLine[data-v-2b60b024]:first-child,.gantt-chart-box .row-header .header-right .paint-col .sLine[data-v-2b60b024]:first-child,.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col .sLine[data-v-2b60b024]:first-child{display:none}.gantt-chart-box .scrollX[data-v-2b60b024]{display:flex;flex-direction:flex-start;align-items:center;height:100%;flex:none;position:relative}.gantt-chart-box .row-header[data-v-2b60b024]{position:relative;z-index:2;display:flex;justify-content:flex-start;align-items:center;text-align:center;background-color:#e9ebf0;box-sizing:border-box;z-index:5}.gantt-chart-box .row-header .header-right[data-v-2b60b024]{flex:auto;height:100%;overflow:hidden}.gantt-chart-box .row-bottom[data-v-2b60b024]{position:relative;z-index:2;display:flex;justify-content:space-between}.gantt-chart-box .row-bottom .box-left[data-v-2b60b024]{display:flex;flex-direction:column;flex:none;position:relative}.gantt-chart-box .row-bottom .box-left .paint-row[data-v-2b60b024]{width:100%;flex:none;text-align:center;justify-content:center;display:flex;align-items:center;background-color:#fafafa;position:relative;box-sizing:border-box}.gantt-chart-box .row-bottom .box-left .paint-row.disabled[data-v-2b60b024]{flex:none;color:#b5b6bf}.gantt-chart-box .row-bottom .box-left .paint-row.canSelected[data-v-2b60b024]{cursor:pointer}.gantt-chart-box .row-bottom .box-left .paint-row.canSelected[data-v-2b60b024]:hover{opacity:.7}.gantt-chart-box .row-bottom .box-left .paint-row.selected[data-v-2b60b024]:after{content:\" \";pointer-events:none;position:absolute;right:-7px;bottom:-7px;border-right:8px solid #365be4;border-top:8px solid transparent;border-left:8px solid transparent;border-bottom:8px solid transparent;transform:rotate(225deg)}.gantt-chart-box .row-bottom .box-left .paint-row>.name[data-v-2b60b024]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%}.gantt-chart-box .row-bottom .box-left .paint-row .sLine[data-v-2b60b024]{position:absolute;left:0;top:0;width:100%;height:1px;background:#000;z-index:3;pointer-events:none}.gantt-chart-box .row-bottom .box-right[data-v-2b60b024]{flex:auto;overflow:hidden;position:relative}.gantt-chart-box .row-bottom .box-paint[data-v-2b60b024]{position:relative;box-sizing:border-box}.gantt-chart-box .row-bottom .box-paint canvas[data-v-2b60b024]{left:0;top:0;position:absolute;width:100%;height:100%;z-index:1;pointer-events:none}.gantt-chart-box .row-bottom .scrollXBar[data-v-2b60b024]{transition:all .2s ease;opacity:.3;position:absolute;left:0;bottom:0;overflow-y:hidden;overflow-x:auto;width:100%;height:10px;z-index:999}.gantt-chart-box .row-bottom .scrollXBar[data-v-2b60b024]::-webkit-scrollbar-track-piece{background:transparent;border-radius:20px}.gantt-chart-box .row-bottom .scrollXBar[data-v-2b60b024]::-webkit-scrollbar{width:10px;height:10px}.gantt-chart-box .row-bottom .scrollXBar[data-v-2b60b024]::-webkit-scrollbar-thumb{background:hsla(217,6%,54%,.333);border-radius:20px}.gantt-chart-box .row-bottom .scrollXBar>div[data-v-2b60b024]{height:10px}.gantt-chart-box .row-bottom .scrollYBar[data-v-2b60b024]{transition:all .2s ease;opacity:.3;position:absolute;right:0;top:0;overflow-y:auto;overflow-x:hidden;height:100%;width:10px;z-index:999}.gantt-chart-box .row-bottom .scrollYBar[data-v-2b60b024]::-webkit-scrollbar-track-piece{background:transparent;border-radius:20px}.gantt-chart-box .row-bottom .scrollYBar[data-v-2b60b024]::-webkit-scrollbar{width:10px;height:10px}.gantt-chart-box .row-bottom .scrollYBar[data-v-2b60b024]::-webkit-scrollbar-thumb{background:hsla(217,6%,54%,.333);border-radius:20px}.gantt-chart-box .row-bottom .scrollYBar>div[data-v-2b60b024]{width:10px}.gantt-chart-box .stat-bottom[data-v-2b60b024]{display:flex;justify-content:space-between;align-items:stretch;background-color:#e9ebf0;position:relative;z-index:5}.gantt-chart-box .stat-bottom .stat-bottom_title[data-v-2b60b024]{flex:none;display:flex;align-items:center;justify-content:center}.gantt-chart-box .stat-bottom .stat-bottom_right[data-v-2b60b024]{flex:auto;height:auto;overflow:hidden}.gantt-chart-box .stat-bottom .stat-bottom_right .stat-bottom_col[data-v-2b60b024]{text-align:center}.menu-common[data-v-2b60b024],.rightClickMenu[data-v-2b60b024],.tag-menu[data-v-2b60b024],.task-menu[data-v-2b60b024]{box-sizing:border-box;background:#fff;box-shadow:0 4px 12px 0 rgba(82,92,108,.16);border-radius:4px;font-family:PingFangSC-Regular;font-size:14px;color:#11152b;line-height:18px;font-weight:400;text-align:center}.rightClickMenu[data-v-2b60b024]{min-width:104px;position:absolute;left:0;top:0;display:none;z-index:7;transition:top .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none}.rightClickMenu li[data-v-2b60b024],.rightClickMenu ul[data-v-2b60b024]{list-style:none}.rightClickMenu ul[data-v-2b60b024]{padding:0;margin:0;display:flex;flex-direction:column}.rightClickMenu ul li[data-v-2b60b024]{font-size:14px;cursor:pointer;box-sizing:border-box;padding:5px 8px;display:flex;align-items:center;justify-content:center;color:#000}.rightClickMenu ul li.disabled[data-v-2b60b024]{cursor:not-allowed;background-color:#ddd}.rightClickMenu ul li[data-v-2b60b024]:not(.disabled):hover{color:#365be4;background-color:#e8edff}.tag-menu[data-v-2b60b024],.task-menu[data-v-2b60b024]{min-width:76px;position:absolute;left:0;top:0;z-index:10;transition:top .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none;list-style:none;margin:0;padding:0;display:flex;flex-direction:column}.tag-menu li[data-v-2b60b024],.task-menu li[data-v-2b60b024]{list-style:none;font-size:14px;cursor:pointer;box-sizing:border-box;padding:5px 8px;display:flex;align-items:center;justify-content:center;color:#000}.tag-menu li.disabled[data-v-2b60b024],.task-menu li.disabled[data-v-2b60b024]{cursor:not-allowed;background-color:#ddd}.tag-menu li[data-v-2b60b024]:not(.disabled):hover,.task-menu li[data-v-2b60b024]:not(.disabled):hover{color:#365be4;background-color:#e8edff}[data-v-2b60b024] .tagSpecial{font-weight:700;color:#000}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ 2069:
+/***/ 576:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -169,14 +169,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _examples_node_modules_store_css_loader_6_11_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_examples_node_modules_store_css_loader_6_11_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".tagItem[data-v-088137a7]{position:absolute;width:0;height:0;left:0;top:0;z-index:4;background-color:#365be4;box-sizing:border-box;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;transition:transform .2s ease}.tagItem.dragable[data-v-088137a7]{cursor:move}.tagItem.moving[data-v-088137a7]{box-shadow:0 0 16px #010a15;z-index:9}.tagItem.selected[data-v-088137a7]{outline:2px dashed red}.tagItem .tagLabel[data-v-088137a7]{-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%;height:100%;text-align:center;display:flex;align-items:center;justify-content:center;padding:0 15px;box-sizing:border-box}.tagItem[data-v-088137a7] >span{width:100%;height:100%}.tagItem[data-v-088137a7] .el-popover__reference-wrapper{display:block;width:100%;height:100%}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".tagItem[data-v-4d0a93c0]{position:absolute;width:0;height:0;left:0;top:0;z-index:4;background-color:#365be4;box-sizing:border-box;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;transition:transform .2s ease}.tagItem.dragable[data-v-4d0a93c0]{cursor:move}.tagItem.moving[data-v-4d0a93c0]{box-shadow:0 0 16px #010a15;z-index:9}.tagItem.selected[data-v-4d0a93c0]{outline:2px dashed red}.tagItem .tagLabel[data-v-4d0a93c0]{-webkit-user-select:none;-moz-user-select:none;user-select:none;width:100%;height:100%;text-align:center;display:flex;align-items:center;justify-content:center;padding:0 15px;box-sizing:border-box}.tagItem[data-v-4d0a93c0] >span{width:100%;height:100%}.tagItem[data-v-4d0a93c0] .el-popover__reference-wrapper{display:block;width:100%;height:100%}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ 449:
+/***/ 2064:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15466,51 +15466,51 @@ var update = add("704b0dae", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ 1060:
+/***/ 4385:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(9846);
+var content = __webpack_require__(343);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(5808)/* ["default"] */ .A)
-var update = add("7ddb7403", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("2902b2e0", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
-/***/ 9487:
+/***/ 2030:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2069);
+var content = __webpack_require__(576);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(5808)/* ["default"] */ .A)
-var update = add("1fcd6c56", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("74a6cf30", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
-/***/ 5263:
+/***/ 3338:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(449);
+var content = __webpack_require__(2064);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(5808)/* ["default"] */ .A)
-var update = add("7a582a42", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("16923df2", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -17604,7 +17604,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-;// CONCATENATED MODULE: ./node_modules/.store/thread-loader@3.0.4/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/index.vue?vue&type=template&id=4a4fe816&scoped=true
+;// CONCATENATED MODULE: ./node_modules/.store/thread-loader@3.0.4/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/index.vue?vue&type=template&id=2b60b024&scoped=true
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
@@ -17778,6 +17778,7 @@ var render = function render() {
         background: _vm.getLegendConfig(item).color || '#000000'
       },
       attrs: {
+        "tipWdith": _vm.tipWdith,
         "tagItem": item,
         "tagMoveCallback": _vm.tagMove,
         "dragable": _vm.tagItemDragable(item),
@@ -18259,8 +18260,8 @@ function tagIsTouchDisabledRow({
 }) {
   return tagTop > disabledYMin - tagHeight && tagTop < disabledYMax;
 }
-;// CONCATENATED MODULE: ./node_modules/.store/thread-loader@3.0.4/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=template&id=088137a7&scoped=true
-var tagItemvue_type_template_id_088137a7_scoped_true_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/.store/thread-loader@3.0.4/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib/index.js!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=template&id=4d0a93c0&scoped=true
+var tagItemvue_type_template_id_4d0a93c0_scoped_true_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -18298,7 +18299,7 @@ var tagItemvue_type_template_id_088137a7_scoped_true_render = function render() 
     attrs: {
       "popper-class": "ganTTTagTip",
       "placement": "right",
-      "width": "206",
+      "width": _vm.tipWdith,
       "trigger": "manual",
       "visible-arrow": false,
       "offset": 0
@@ -18338,7 +18339,7 @@ var tagItemvue_type_template_id_088137a7_scoped_true_render = function render() 
     }
   })], 1)], 2)]], 2);
 };
-var tagItemvue_type_template_id_088137a7_scoped_true_staticRenderFns = [];
+var tagItemvue_type_template_id_4d0a93c0_scoped_true_staticRenderFns = [];
 
 // EXTERNAL MODULE: ./node_modules/.store/element-ui@2.15.14/node_modules/element-ui/lib/theme-chalk/popover.css
 var popover = __webpack_require__(6482);
@@ -18545,6 +18546,11 @@ var component = normalizeComponent(
     showSelected: {
       type: Boolean,
       default: false
+    },
+    // tooltip 宽度
+    tipWdith: {
+      type: [String, Number],
+      default: 206
     }
   },
   data() {
@@ -18722,13 +18728,13 @@ var component = normalizeComponent(
 });
 ;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue?vue&type=script&lang=js
  /* harmony default export */ var ganttChartVue_tagItemvue_type_script_lang_js = (tagItemvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-22.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=0&id=088137a7&prod&lang=scss&scoped=true
-var tagItemvue_type_style_index_0_id_088137a7_prod_lang_scss_scoped_true = __webpack_require__(9487);
-;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=0&id=088137a7&prod&lang=scss&scoped=true
+// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-22.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=0&id=4d0a93c0&prod&lang=scss&scoped=true
+var tagItemvue_type_style_index_0_id_4d0a93c0_prod_lang_scss_scoped_true = __webpack_require__(2030);
+;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=0&id=4d0a93c0&prod&lang=scss&scoped=true
 
-// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-22.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=1&id=088137a7&prod&lang=scss
-var tagItemvue_type_style_index_1_id_088137a7_prod_lang_scss = __webpack_require__(5263);
-;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=1&id=088137a7&prod&lang=scss
+// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-22.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=1&id=4d0a93c0&prod&lang=scss
+var tagItemvue_type_style_index_1_id_4d0a93c0_prod_lang_scss = __webpack_require__(3338);
+;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue?vue&type=style&index=1&id=4d0a93c0&prod&lang=scss
 
 ;// CONCATENATED MODULE: ../packages/components/ganttChartVue/tagItem.vue
 
@@ -18742,11 +18748,11 @@ var tagItemvue_type_style_index_1_id_088137a7_prod_lang_scss = __webpack_require
 
 var tagItem_component = normalizeComponent(
   ganttChartVue_tagItemvue_type_script_lang_js,
-  tagItemvue_type_template_id_088137a7_scoped_true_render,
-  tagItemvue_type_template_id_088137a7_scoped_true_staticRenderFns,
+  tagItemvue_type_template_id_4d0a93c0_scoped_true_render,
+  tagItemvue_type_template_id_4d0a93c0_scoped_true_staticRenderFns,
   false,
   null,
-  "088137a7",
+  "4d0a93c0",
   null
   
 )
@@ -19157,6 +19163,11 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
     openTagMoveDodgeAnimate: {
       type: Boolean,
       default: false
+    },
+    // tooltip 宽度
+    tipWdith: {
+      type: [String, Number],
+      default: 206
     },
     // 样式部分 >>
     // 甘特图背景色
@@ -21474,9 +21485,9 @@ hasTagsDataMinRowHeight = Math.max(...[hasTagsDataMinRowHeight, minRowHeight]); 
 });
 ;// CONCATENATED MODULE: ../packages/components/ganttChartVue/index.vue?vue&type=script&lang=js
  /* harmony default export */ var components_ganttChartVuevue_type_script_lang_js = (ganttChartVuevue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-22.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/index.vue?vue&type=style&index=0&id=4a4fe816&prod&lang=scss&scoped=true
-var ganttChartVuevue_type_style_index_0_id_4a4fe816_prod_lang_scss_scoped_true = __webpack_require__(1060);
-;// CONCATENATED MODULE: ../packages/components/ganttChartVue/index.vue?vue&type=style&index=0&id=4a4fe816&prod&lang=scss&scoped=true
+// EXTERNAL MODULE: ./node_modules/.store/vue-style-loader@4.1.3/node_modules/vue-style-loader/index.js??clonedRuleSet-22.use[0]!./node_modules/.store/css-loader@6.11.0/node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/.store/postcss-loader@6.2.1/node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/.store/sass-loader@10.5.2/node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[4]!./node_modules/.store/vue-loader@15.11.1/node_modules/vue-loader/lib/index.js??vue-loader-options!../packages/components/ganttChartVue/index.vue?vue&type=style&index=0&id=2b60b024&prod&lang=scss&scoped=true
+var ganttChartVuevue_type_style_index_0_id_2b60b024_prod_lang_scss_scoped_true = __webpack_require__(4385);
+;// CONCATENATED MODULE: ../packages/components/ganttChartVue/index.vue?vue&type=style&index=0&id=2b60b024&prod&lang=scss&scoped=true
 
 ;// CONCATENATED MODULE: ../packages/components/ganttChartVue/index.vue
 
@@ -21493,7 +21504,7 @@ var ganttChartVue_component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "4a4fe816",
+  "2b60b024",
   null
   
 )

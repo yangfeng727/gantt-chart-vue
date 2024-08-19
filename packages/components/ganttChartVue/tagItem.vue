@@ -22,7 +22,7 @@
       </span>
     </template>
     <template v-else>
-      <el-popover popper-class="ganTTTagTip" placement="right" width="206" trigger="manual" v-model="visibleTip"
+      <el-popover popper-class="ganTTTagTip" placement="right" :width="tipWdith" trigger="manual" v-model="visibleTip"
         :visible-arrow="false" :offset="0">
         <!-- tag tip 插槽 -->
         <slot name="tagTip" :tagData="tagItem">
@@ -81,6 +81,11 @@ export default {
     showSelected: {
       type: Boolean,
       default: false
+    },
+    // tooltip 宽度
+    tipWdith: {
+      type: [String,Number],
+      default: 206
     },
   },
   data() {

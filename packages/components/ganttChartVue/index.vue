@@ -127,7 +127,7 @@
 
             <!-- 内部标签 -->
             <template v-for="item in tagList">
-              <tagItem :key="item.tagId" v-if="!item.hide" :tagItem="item" :tagMoveCallback="tagMove"
+              <tagItem :key="item.tagId" v-if="!item.hide" :tipWdith="tipWdith" :tagItem="item" :tagMoveCallback="tagMove"
                 @tagDragStart="tagDragStart" @changeEnd="tagChangeEnd"
                 :style="{ background: getLegendConfig(item).color || '#000000' }" :dragable="tagItemDragable(item)"
                 :closeTip="tagItemCloseTip(item)" :showOperateMark="tagHasOperateMenu(item)" :showSelected="showSelected"
@@ -510,6 +510,12 @@ export default {
     openTagMoveDodgeAnimate: {
       type: Boolean,
       default: false
+    },
+
+    // tooltip 宽度
+    tipWdith: {
+      type: [String,Number],
+      default: 206
     },
 
     // 样式部分 >>

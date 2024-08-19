@@ -20,11 +20,10 @@ examples下是demo代码，进入examples目录下执行 `npm i 和 npm run serv
 
 ## 支持vue2.x
 **注意：**  
-针对markLineTime属性， vue2 使用 markLineTime.sync。~~vue3 使用 v-model:markLineTime~~。 
+针对markLineTime属性， vue2 使用 markLineTime.sync。vue3 使用 v-model:markLineTime。 
 
 ## vue3.x 支持
-目前不支持vue3，原因是element ui 不支持vue3需要改为了element-plus。  
-vue3后续有空了会重新发布个next版本，因为vue3本身是支持选项式写法的，改为 element-plus 后只需要修改一小部分代码即可。
+vue3.x 请使用 [gantt-chart-vue3](https://github.com/yangfeng727/gantt-chart-vue3?tab=readme-ov-file)
 
 ## 功能
 * 1.甘特图精度显示到“分钟”。
@@ -496,6 +495,9 @@ type ItaskMenuList = Ibtn[]
 `boolean`，tag拖动的避让效果，只是单纯显示，原理: 修改translateX(x)，这样不会对原始数据造成影响，非必要不用开启此功能。  
 **【注意!!!：开启此功能后，将导致某些tag含有translateX 偏移，从而让甘特图表现异常-正确用法是每次拖动结束【比如调接口计算】，然后重新渲染整个甘特图】**
 ![tag避让效果](./packages/imgs/tag避让效果.gif)
+
+## tipWdith
+`string | number`，tooltip 宽度，默认206px。
 
 ### 下面几个 props 属性是样式属性
 ## ganttBgColor
